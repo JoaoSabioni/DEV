@@ -7,11 +7,13 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "next": "latest",
     "@prisma/client": "7.4.1",
     "@prisma/config": "7.4.1"
   },
   "devDependencies": {
-    "@types/node": "^25.3.2",
-    "prisma": "7.4.1"
+    "prisma": "7.4.1",
+    "@types/node": "latest",
+    "typescript": "latest"
   }
 }
