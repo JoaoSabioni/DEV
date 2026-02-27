@@ -8,12 +8,10 @@
   },
   "dependencies": {
     "@prisma/client": "7.4.1",
-    "@prisma/config": "7.4.1",
-    "next": "latest"
+    "@prisma/config": "7.4.1"
   },
   "devDependencies": {
     "@types/node": "^25.3.2",
-    "prisma": "^6.19.2",
-    "typescript": "latest"
+    "prisma": "7.4.1"
   }
 }

@@ -3,9 +3,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider  = "postgresql"
 }
-
 // Abaixo os seus modelos (Exemplos):
 model User {
   id    String @id @default(uuid())
