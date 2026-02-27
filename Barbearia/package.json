@@ -7,13 +7,17 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.4.1",
+    "@prisma/client": "^7.4.1",
+    "@prisma/config": "7.4.1",
+    "dotenv": "^17.3.1",
     "next": "latest",
-    "@prisma/client": "7.4.1",
-    "@prisma/config": "7.4.1"
+    "pg": "^8.19.0"
   },
   "devDependencies": {
-    "prisma": "7.4.1",
     "@types/node": "latest",
+    "@types/pg": "^8.16.0",
+    "prisma": "^7.4.1",
     "typescript": "latest"
   }
 }

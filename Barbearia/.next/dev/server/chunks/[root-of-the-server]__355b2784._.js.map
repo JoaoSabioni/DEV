@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///C:/DEV/Barbearia/app/api/services/route.ts"],"sourcesContent":["import { prisma } from '@/lib/prisma';\r\nimport { NextResponse } from 'next/server';\r\n\r\nexport async function GET() {\r\n  const agendamentos = await prisma.agendamento.findMany();\r\n  return NextResponse.json(agendamentos);\r\n}\r\n\r\nexport async function POST(req: Request) {\r\n  const body = await req.json();\r\n  const agendamento = await prisma.agendamento.create({ data: body });\r\n  return NextResponse.json(agendamento, { status: 201 });\r\n}"],"names":[],"mappings":";;;;;;;;;;;AACA;;;AAEO,eAAe;IACpB,MAAM,eAAe,MAAM,OAAO,WAAW,CAAC,QAAQ;IACtD,OAAO,gJAAY,CAAC,IAAI,CAAC;AAC3B;AAEO,eAAe,KAAK,GAAY;IACrC,MAAM,OAAO,MAAM,IAAI,IAAI;IAC3B,MAAM,cAAc,MAAM,OAAO,WAAW,CAAC,MAAM,CAAC;QAAE,MAAM;IAAK;IACjE,OAAO,gJAAY,CAAC,IAAI,CAAC,aAAa;QAAE,QAAQ;IAAI;AACtD"}}]
+}

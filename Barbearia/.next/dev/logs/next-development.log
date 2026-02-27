@@ -1,0 +1,73 @@
+[00:00:00.401] Server  LOG     
+[00:00:00.401] Server  LOG       We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:00.401] Server  LOG       The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:00.402] Server  LOG       	- lib was set to dom,dom.iterable,esnext
+[00:00:00.402] Server  LOG       	- allowJs was set to true
+[00:00:00.402] Server  LOG       	- noEmit was set to true
+[00:00:00.402] Server  LOG       	- incremental was set to true
+[00:00:00.402] Server  LOG       	- include was set to ['next-env.d.ts', '.next/types/**/*.ts', '.next/dev/types/**/*.ts', '**/*.mts', '**/*.ts', '**/*.tsx']
+[00:00:00.402] Server  LOG       	- plugins was updated to add { name: 'next' }
+[00:00:00.402] Server  LOG       	- exclude was set to ['node_modules']
+[00:00:00.402] Server  LOG     
+[00:00:00.402] Server  LOG       The following mandatory changes were made to your tsconfig.json:
+
+[00:00:00.402] Server  LOG       	- resolveJsonModule was set to true (to match webpack resolution)
+[00:00:00.403] Server  LOG       	- isolatedModules was set to true (requirement for SWC / Babel)
+[00:00:00.403] Server  LOG       	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:00.403] Server  LOG     
+[00:00:00.480] Server  LOG     ✓ Ready in 317ms
+[00:00:12.500] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:40.668] Server  ERROR   ⨯ ./app/api/services/route.ts:1:1
+Module not found: Can't resolve '@/lib/prisma'
+> 1 | import { prisma } from '@/lib/prisma';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { NextResponse } from 'next/server';
+  3 |
+  4 | export async function GET() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:41.157] Browser ERROR   uncaughtError: Error: ./app/api/services/route.ts:1:1
+Module not found: Can't resolve '@/lib/prisma'
+> 1 | import { prisma } from '@/lib/prisma';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { NextResponse } from 'next/server';
+  3 |
+  4 | export async function GET() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:41.321] Browser ERROR   ./app/api/services/route.ts:1:1
+Module not found: Can't resolve '@/lib/prisma'
+> 1 | import { prisma } from '@/lib/prisma';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { NextResponse } from 'next/server';
+  3 |
+  4 | export async function GET() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:41.321] Browser ERROR   ./app/api/services/route.ts:1:1
+Module not found: Can't resolve '@/lib/prisma'
+> 1 | import { prisma } from '@/lib/prisma';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { NextResponse } from 'next/server';
+  3 |
+  4 | export async function GET() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:53.052] Browser ERROR   ./app/api/services/route.ts:1:1
+Module not found: Can't resolve '@/lib/prisma'
+> 1 | import { prisma } from '@/lib/prisma';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { NextResponse } from 'next/server';
+  3 |
+  4 | export async function GET() {
+
+https://nextjs.org/docs/messages/module-not-found

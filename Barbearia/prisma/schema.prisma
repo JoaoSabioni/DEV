@@ -3,26 +3,14 @@ generator client {
 }
 
 datasource db {
-  provider  = "postgresql"
-}
-// Abaixo os seus modelos (Exemplos):
-model User {
-  id    String @id @default(uuid())
-  email String @unique
+  provider = "postgresql"
 }
 
-model Barbershop {
-  id       String    @id @default(uuid())
-  name     String
-  address  String
-  imageUrl String
-  services Service[]
-}
-
-model Service {
-  id           String     @id @default(uuid())
-  name         String
-  price        Decimal
-  barbershopId String
-  barbershop   Barbershop @relation(fields: [barbershopId], references: [id])
+model Agendamento {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  telefone  String
+  servico   String
+  data      DateTime
+  criadoEm DateTime @default(now())
 }
