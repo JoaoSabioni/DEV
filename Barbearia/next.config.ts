@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
   compress: true,
+  serverExternalPackages: ['@prisma/client', 'prisma'],
 }
 
 export default nextConfig
