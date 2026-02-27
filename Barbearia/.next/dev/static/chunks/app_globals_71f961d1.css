@@ -1,6 +1,6 @@
 /* [project]/app/globals.css [app-client] (css) */
 @theme {
-  --color-black: #080808; --color-dark: #111; --color-dark2: #1a1a1a; --color-silver: #c8c8c8; --color-silver-light: #e8e8e8; --color-silver-dim: #888; --font-display: "Cormorant Garamond", serif; --font-body: "Didact Gothic", sans-serif;
+  --color-black: #080808; --color-dark: #111; --color-dark2: #1a1a1a; --color-silver: #c8c8c8; --color-silver-light: #e8e8e8; --color-silver-dim: #888; --font-display: "Cormorant Garamond", serif; --font-body: "Didact Gothic", sans-serif; --spacing-15: 3.75rem; --spacing-25: 6.25rem; --spacing-30: 7.5rem;
 }
 
 * {

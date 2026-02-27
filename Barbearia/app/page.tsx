@@ -9,7 +9,6 @@ export default function Home() {
 
   useEffect(() => {
     let mx = 0, my = 0, rx = 0, ry = 0
-
     const onMove = (e: MouseEvent) => {
       mx = e.clientX; my = e.clientY
       if (cursorRef.current) {
@@ -17,7 +16,6 @@ export default function Home() {
         cursorRef.current.style.top = my + 'px'
       }
     }
-
     const animate = () => {
       rx += (mx - rx) * 0.12
       ry += (my - ry) * 0.12
@@ -27,7 +25,6 @@ export default function Home() {
       }
       requestAnimationFrame(animate)
     }
-
     document.addEventListener('mousemove', onMove)
     animate()
     return () => document.removeEventListener('mousemove', onMove)
@@ -78,121 +75,111 @@ export default function Home() {
     { num: '06', icon: '⚡', name: 'Corte Expresso', desc: 'Corte rápido e preciso para o homem que valoriza o tempo. Sem espera, sem compromissos.', price: '12€' },
   ]
 
-  const gallery = [
-    { label: 'O nosso espaço', icon: '📷', span: true },
-    { label: 'Corte clássico', icon: '✂️' },
-    { label: 'Barba premium', icon: '🪒' },
-    { label: 'Pacote completo', icon: '👑' },
-    { label: 'Detalhes', icon: '⭐' },
-  ]
-
   return (
-    <>
+    <div style={{ background: '#080808', color: '#e8e8e8', fontFamily: "'Didact Gothic', sans-serif", overflowX: 'hidden' }}>
+
       {/* Custom Cursor */}
-      <div ref={cursorRef} className="fixed w-2 h-2 bg-[#c8c8c8] rounded-full pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-200" />
-      <div ref={ringRef} className="fixed w-9 h-9 border border-[#c8c8c8]/40 rounded-full pointer-events-none z-[9998] -translate-x-1/2 -translate-y-1/2" />
+      <div ref={cursorRef} style={{ position: 'fixed', width: 8, height: 8, background: '#c8c8c8', borderRadius: '50%', pointerEvents: 'none', zIndex: 9999, transform: 'translate(-50%,-50%)', transition: 'width .2s,height .2s' }} />
+      <div ref={ringRef} style={{ position: 'fixed', width: 36, height: 36, border: '1px solid rgba(200,200,200,0.4)', borderRadius: '50%', pointerEvents: 'none', zIndex: 9998, transform: 'translate(-50%,-50%)' }} />
 
       {/* NAV */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-15 py-7 bg-gradient-to-b from-[#080808]/95 to-transparent">
-        <a href="#" className="flex items-center">
-          <img src="/logo.png" alt="Elegance Studio" className="h-12 w-auto invert opacity-80 hover:opacity-100 transition-opacity" />
+      <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '28px 60px', background: 'linear-gradient(to bottom, rgba(8,8,8,0.95), transparent)' }}>
+        <a href="#" style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="/logo.png" alt="Elegance Studio" style={{ height: 48, width: 'auto', filter: 'invert(1)', opacity: 0.8 }} />
         </a>
-        <ul className="hidden md:flex gap-12 list-none">
+        <div style={{ display: 'flex', gap: 48, alignItems: 'center' }}>
           {['Serviços', 'Galeria', 'Contacto'].map(item => (
-            <li key={item}>
-              <a href={`#${item.toLowerCase()}`} className="text-[0.7rem] tracking-[0.25em] uppercase text-[#888] no-underline hover:text-[#e8e8e8] transition-colors relative group">
-                {item}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#c8c8c8] group-hover:w-full transition-all duration-300" />
-              </a>
-            </li>
-          ))}
-          <li>
-            <a href="#agendar" className="text-[0.65rem] tracking-[0.2em] uppercase text-[#080808] bg-[#e8e8e8] px-6 py-2.5 no-underline hover:bg-[#888] transition-colors">
-              Agendar
+            <a key={item} href={`#${item.toLowerCase()}`} style={{ fontSize: '0.7rem', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#888', textDecoration: 'none' }}
+              onMouseEnter={e => (e.currentTarget.style.color = '#e8e8e8')}
+              onMouseLeave={e => (e.currentTarget.style.color = '#888')}>
+              {item}
             </a>
-          </li>
-        </ul>
+          ))}
+          <a href="#agendar" style={{ fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#080808', background: '#e8e8e8', padding: '10px 24px', textDecoration: 'none' }}
+            onMouseEnter={e => (e.currentTarget.style.background = '#c8c8c8')}
+            onMouseLeave={e => (e.currentTarget.style.background = '#e8e8e8')}>
+            Agendar
+          </a>
+        </div>
       </nav>
 
       {/* HERO */}
-      <section className="min-h-screen flex items-end px-15 pb-25 relative overflow-hidden" id="inicio">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(180,180,180,0.04)_0%,transparent_60%),radial-gradient(ellipse_at_20%_80%,rgba(120,120,120,0.06)_0%,transparent_50%),#080808]" />
-        <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(200,200,200,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(200,200,200,0.03) 1px,transparent 1px)', backgroundSize: '80px 80px' }} />
+      <section id="inicio" style={{ minHeight: '100vh', display: 'flex', alignItems: 'flex-end', padding: '0 60px 100px', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 70% 40%, rgba(180,180,180,0.04) 0%, transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(120,120,120,0.06) 0%, transparent 50%), #080808' }} />
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(200,200,200,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(200,200,200,0.03) 1px,transparent 1px)', backgroundSize: '80px 80px' }} />
+        <div style={{ position: 'absolute', right: 60, top: '50%', transform: 'translateY(-50%)', fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(180px,25vw,320px)', fontWeight: 300, color: 'transparent', WebkitTextStroke: '1px rgba(200,200,200,0.06)', lineHeight: 1, userSelect: 'none', pointerEvents: 'none' }}>ES</div>
 
-        <div className="absolute right-15 top-1/2 -translate-y-1/2 font-display font-light leading-none select-none pointer-events-none hidden lg:block"
-          style={{ fontSize: 'clamp(180px,25vw,320px)', color: 'transparent', WebkitTextStroke: '1px rgba(200,200,200,0.06)' }}>
-          ES
-        </div>
-
-        <div className="relative z-10 max-w-2xl fade-up hero-animate">
-          <p className="text-[0.65rem] tracking-[0.4em] uppercase text-[#888] mb-8 flex items-center gap-4 before:block before:w-10 before:h-px before:bg-[#888]">
+        <div className="fade-up hero-animate" style={{ position: 'relative', zIndex: 2, maxWidth: 700 }}>
+          <p style={{ fontSize: '0.65rem', letterSpacing: '0.4em', textTransform: 'uppercase', color: '#888', marginBottom: 32, display: 'flex', alignItems: 'center', gap: 16 }}>
+            <span style={{ display: 'block', width: 40, height: 1, background: '#888' }} />
             Barbearia Premium · Lisboa
           </p>
-          <h1 className="font-display font-light leading-[0.95] mb-10 tracking-tight" style={{ fontSize: 'clamp(56px,8vw,110px)' }}>
-            A Arte<br />
-            do <em className="italic text-[#888]">Corte</em><br />
-            Perfeito
+          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(56px,8vw,110px)', fontWeight: 300, lineHeight: 0.95, marginBottom: 40, letterSpacing: '-0.01em' }}>
+            A Arte<br />do <em style={{ fontStyle: 'italic', color: '#888' }}>Corte</em><br />Perfeito
           </h1>
-          <p className="text-[0.8rem] tracking-[0.12em] text-[#888] leading-[1.8] max-w-sm mb-14">
+          <p style={{ fontSize: '0.8rem', letterSpacing: '0.12em', color: '#888', lineHeight: 1.8, maxWidth: 400, marginBottom: 56 }}>
             Onde a tradição encontra a sofisticação. Cada detalhe pensado para a sua experiência.
           </p>
-          <div className="flex items-center gap-10">
-            <a href="#agendar" className="text-[0.65rem] tracking-[0.25em] uppercase text-[#080808] bg-[#e8e8e8] px-10 py-4 no-underline hover:bg-[#c8c8c8] hover:-translate-y-0.5 transition-all">
+          <div style={{ display: 'flex', alignItems: 'center', gap: 40 }}>
+            <a href="#agendar" style={{ fontSize: '0.65rem', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#080808', background: '#e8e8e8', padding: '16px 40px', textDecoration: 'none', transition: 'background .3s' }}
+              onMouseEnter={e => (e.currentTarget.style.background = '#c8c8c8')}
+              onMouseLeave={e => (e.currentTarget.style.background = '#e8e8e8')}>
               Marcar Consulta
             </a>
-            <a href="#servicos" className="text-[0.65rem] tracking-[0.25em] uppercase text-[#888] no-underline flex items-center gap-3 hover:text-[#e8e8e8] hover:gap-5 transition-all after:content-['→']">
-              Ver Serviços
+            <a href="#servicos" style={{ fontSize: '0.65rem', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#888', textDecoration: 'none' }}
+              onMouseEnter={e => (e.currentTarget.style.color = '#e8e8e8')}
+              onMouseLeave={e => (e.currentTarget.style.color = '#888')}>
+              Ver Serviços →
             </a>
           </div>
         </div>
 
-        <div className="absolute bottom-10 right-15 flex flex-col items-center gap-3 z-10">
-          <div className="w-px h-15 bg-gradient-to-b from-[#888] to-transparent animate-scroll-pulse" />
-          <span className="text-[0.6rem] tracking-[0.3em] uppercase text-[#888]" style={{ writingMode: 'vertical-rl' }}>Scroll</span>
+        <div style={{ position: 'absolute', bottom: 40, right: 60, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, zIndex: 2 }}>
+          <div className="animate-scroll-pulse" style={{ width: 1, height: 60, background: 'linear-gradient(to bottom, #888, transparent)' }} />
+          <span style={{ fontSize: '0.6rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#888', writingMode: 'vertical-rl' }}>Scroll</span>
         </div>
       </section>
 
-      <div className="h-px mx-15 bg-gradient-to-r from-transparent via-[#c8c8c8]/15 to-transparent" />
+      {/* DIVIDER */}
+      <div style={{ height: 1, margin: '0 60px', background: 'linear-gradient(to right, transparent, rgba(200,200,200,0.15), transparent)' }} />
 
       {/* STATS */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#c8c8c8]/8">
-        {[
-          { num: '12+', label: 'Anos de Experiência' },
-          { num: '4k+', label: 'Clientes Satisfeitos' },
-          { num: '5★', label: 'Avaliação Google' },
-        ].map((s, i) => (
-          <div key={s.num} className="bg-[#080808] px-10 py-12 text-center hover:bg-[#111] transition-colors fade-up" style={{ transitionDelay: `${i * 0.1}s` }}>
-            <div className="font-display font-light text-[#e8e8e8] leading-none mb-3" style={{ fontSize: 'clamp(48px,6vw,80px)' }}>{s.num}</div>
-            <div className="text-[0.65rem] tracking-[0.3em] uppercase text-[#888]">{s.label}</div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 1, background: 'rgba(200,200,200,0.08)' }}>
+        {[{ num: '12+', label: 'Anos de Experiência' }, { num: '4k+', label: 'Clientes Satisfeitos' }, { num: '5★', label: 'Avaliação Google' }].map((s, i) => (
+          <div key={i} className="fade-up" style={{ background: '#080808', padding: '48px 40px', textAlign: 'center', transitionDelay: `${i * 0.1}s` }}
+            onMouseEnter={e => (e.currentTarget.style.background = '#111')}
+            onMouseLeave={e => (e.currentTarget.style.background = '#080808')}>
+            <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(48px,6vw,80px)', fontWeight: 300, lineHeight: 1, marginBottom: 12 }}>{s.num}</div>
+            <div style={{ fontSize: '0.65rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#888' }}>{s.label}</div>
           </div>
         ))}
       </div>
 
-      <div className="h-px mx-15 bg-gradient-to-r from-transparent via-[#c8c8c8]/15 to-transparent" />
+      <div style={{ height: 1, margin: '0 60px', background: 'linear-gradient(to right, transparent, rgba(200,200,200,0.15), transparent)' }} />
 
       {/* SERVICES */}
-      <section className="px-15 py-30" id="servicos">
-        <div className="flex justify-between items-end mb-20">
-          <div>
-            <p className="text-[0.65rem] tracking-[0.4em] uppercase text-[#888] mb-5 flex items-center gap-4 before:block before:w-8 before:h-px before:bg-[#888]">
-              O Que Oferecemos
-            </p>
-            <h2 className="font-display font-light leading-[1.1] text-[#e8e8e8]" style={{ fontSize: 'clamp(36px,5vw,64px)' }}>
-              Serviços &<br /><em className="italic text-[#888]">Preçário</em>
-            </h2>
-          </div>
+      <section id="servicos" style={{ padding: '120px 60px' }}>
+        <div style={{ marginBottom: 80 }}>
+          <p style={{ fontSize: '0.65rem', letterSpacing: '0.4em', textTransform: 'uppercase', color: '#888', marginBottom: 20, display: 'flex', alignItems: 'center', gap: 16 }}>
+            <span style={{ display: 'block', width: 30, height: 1, background: '#888' }} />
+            O Que Oferecemos
+          </p>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(36px,5vw,64px)', fontWeight: 300, lineHeight: 1.1 }}>
+            Serviços &<br /><em style={{ fontStyle: 'italic', color: '#888' }}>Preçário</em>
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#c8c8c8]/8">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 1, background: 'rgba(200,200,200,0.08)' }}>
           {services.map((s, i) => (
-            <div key={s.num} className="bg-[#080808] p-14 relative overflow-hidden hover:bg-[#111] transition-colors group fade-up" style={{ transitionDelay: `${i * 0.1}s` }}>
-              <span className="absolute bottom-0 left-0 w-0 h-px bg-[#c8c8c8] group-hover:w-full transition-all duration-500" />
-              <div className="font-display text-[0.9rem] text-[#c8c8c8]/20 mb-8 tracking-wider">{s.num}</div>
-              <span className="text-4xl mb-6 block grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all">{s.icon}</span>
-              <h3 className="font-display font-light text-[1.8rem] mb-4 text-[#e8e8e8]">{s.name}</h3>
-              <p className="text-[0.75rem] text-[#888] leading-[1.8] mb-8 tracking-wide">{s.desc}</p>
-              <div className="font-display font-light text-[2rem] text-[#c8c8c8]">
-                {s.price} <span className="font-body text-[0.7rem] text-[#888] tracking-wider ml-1">/ sessão</span>
+            <div key={i} className="fade-up" style={{ background: '#080808', padding: '56px 40px', position: 'relative', overflow: 'hidden', transitionDelay: `${i * 0.1}s`, transition: 'background .4s' }}
+              onMouseEnter={e => (e.currentTarget.style.background = '#111')}
+              onMouseLeave={e => (e.currentTarget.style.background = '#080808')}>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '0.9rem', color: 'rgba(200,200,200,0.2)', marginBottom: 32, letterSpacing: '0.1em' }}>{s.num}</div>
+              <span style={{ fontSize: '2rem', marginBottom: 24, display: 'block' }}>{s.icon}</span>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, marginBottom: 16 }}>{s.name}</h3>
+              <p style={{ fontSize: '0.75rem', color: '#888', lineHeight: 1.8, marginBottom: 32, letterSpacing: '0.05em' }}>{s.desc}</p>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#c8c8c8' }}>
+                {s.price} <span style={{ fontFamily: "'Didact Gothic', sans-serif", fontSize: '0.7rem', color: '#888', marginLeft: 4 }}>/ sessão</span>
               </div>
             </div>
           ))}
@@ -200,23 +187,31 @@ export default function Home() {
       </section>
 
       {/* GALLERY */}
-      <section className="pb-30" id="galeria">
-        <div className="px-15 mb-15 fade-up">
-          <p className="text-[0.65rem] tracking-[0.4em] uppercase text-[#888] mb-5 flex items-center gap-4 before:block before:w-8 before:h-px before:bg-[#888]">
+      <section id="galeria" style={{ paddingBottom: 120 }}>
+        <div className="fade-up" style={{ padding: '0 60px', marginBottom: 60 }}>
+          <p style={{ fontSize: '0.65rem', letterSpacing: '0.4em', textTransform: 'uppercase', color: '#888', marginBottom: 20, display: 'flex', alignItems: 'center', gap: 16 }}>
+            <span style={{ display: 'block', width: 30, height: 1, background: '#888' }} />
             O Nosso Trabalho
           </p>
-          <h2 className="font-display font-light text-[#e8e8e8]" style={{ fontSize: 'clamp(36px,5vw,64px)' }}>Galeria</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(36px,5vw,64px)', fontWeight: 300 }}>Galeria</h2>
         </div>
-
-        <div className="px-15 grid grid-cols-2 md:grid-cols-3 gap-1" style={{ gridTemplateRows: '300px 300px' }}>
-          {gallery.map((g, i) => (
-            <div key={i} className={`bg-[#1a1a1a] relative overflow-hidden group ${i === 0 ? 'row-span-2' : ''}`}>
-              <div className="w-full h-full flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-[#1a1a1a] to-[#111] transition-transform duration-700 group-hover:scale-[1.03]">
-                <span className="text-4xl opacity-20">{g.icon}</span>
-                <span className="text-[0.6rem] tracking-[0.3em] uppercase text-[#888] opacity-40">Foto em breve</span>
+        <div style={{ padding: '0 60px', display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', gridTemplateRows: '300px 300px', gap: 4 }}>
+          {[
+            { label: 'O nosso espaço', icon: '📷', rowSpan: true },
+            { label: 'Corte clássico', icon: '✂️' },
+            { label: 'Barba premium', icon: '🪒' },
+            { label: 'Pacote completo', icon: '👑' },
+            { label: 'Detalhes', icon: '⭐' },
+          ].map((g, i) => (
+            <div key={i} style={{ gridRow: i === 0 ? 'span 2' : 'auto', background: '#1a1a1a', position: 'relative', overflow: 'hidden' }}
+              onMouseEnter={e => { const ov = e.currentTarget.querySelector('.gal-overlay') as HTMLElement; if (ov) ov.style.opacity = '1' }}
+              onMouseLeave={e => { const ov = e.currentTarget.querySelector('.gal-overlay') as HTMLElement; if (ov) ov.style.opacity = '0' }}>
+              <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, background: 'linear-gradient(135deg,#1a1a1a,#111)' }}>
+                <span style={{ fontSize: '2rem', opacity: 0.2 }}>{g.icon}</span>
+                <span style={{ fontSize: '0.6rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#888', opacity: 0.4 }}>Foto em breve</span>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex items-end p-6">
-                <span className="font-display text-[1.2rem] italic text-[#e8e8e8]">{g.label}</span>
+              <div className="gal-overlay" style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(8,8,8,0.8),transparent)', opacity: 0, transition: 'opacity .4s', display: 'flex', alignItems: 'flex-end', padding: 24 }}>
+                <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontStyle: 'italic' }}>{g.label}</span>
               </div>
             </div>
           ))}
@@ -224,77 +219,58 @@ export default function Home() {
       </section>
 
       {/* BOOKING */}
-      <section className="px-15 py-30 bg-[#111] relative overflow-hidden" id="agendar">
-        <div className="absolute right-[-20px] top-1/2 -translate-y-1/2 font-display font-light pointer-events-none select-none hidden lg:block"
-          style={{ fontSize: 'clamp(100px,18vw,220px)', color: 'transparent', WebkitTextStroke: '1px rgba(200,200,200,0.04)', whiteSpace: 'nowrap' }}>
-          AGENDAR
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-25 items-center relative z-10">
+      <section id="agendar" style={{ padding: '120px 60px', background: '#111', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', right: -20, top: '50%', transform: 'translateY(-50%)', fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(100px,18vw,220px)', fontWeight: 300, color: 'transparent', WebkitTextStroke: '1px rgba(200,200,200,0.04)', pointerEvents: 'none', userSelect: 'none', whiteSpace: 'nowrap' }}>AGENDAR</div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 100, alignItems: 'center', position: 'relative', zIndex: 2 }}>
           <div>
-            <p className="text-[0.65rem] tracking-[0.4em] uppercase text-[#888] mb-5 flex items-center gap-4 before:block before:w-8 before:h-px before:bg-[#888]">
+            <p style={{ fontSize: '0.65rem', letterSpacing: '0.4em', textTransform: 'uppercase', color: '#888', marginBottom: 20, display: 'flex', alignItems: 'center', gap: 16 }}>
+              <span style={{ display: 'block', width: 30, height: 1, background: '#888' }} />
               Reserva Online
             </p>
-            <h2 className="font-display font-light text-[#e8e8e8] mb-8" style={{ fontSize: 'clamp(36px,5vw,64px)' }}>
-              Agende a Sua<br /><em className="italic text-[#888]">Visita</em>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(36px,5vw,64px)', fontWeight: 300, lineHeight: 1.1, marginBottom: 32 }}>
+              Agende a Sua<br /><em style={{ fontStyle: 'italic', color: '#888' }}>Visita</em>
             </h2>
-            <p className="text-[0.75rem] text-[#888] leading-[1.8] tracking-wide max-w-xs mb-12">
-              Reserve o seu lugar em poucos segundos. Confirmação imediata por SMS.
-            </p>
-            <div className="flex flex-col gap-5">
+            <p style={{ fontSize: '0.75rem', color: '#888', lineHeight: 1.8, maxWidth: 320, marginBottom: 48 }}>Reserve o seu lugar em poucos segundos. Confirmação imediata por SMS.</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
               {[['Horário', 'Seg — Sex: 9h — 20h'], ['Sábado', '9h — 18h']].map(([label, val]) => (
-                <div key={label} className="flex items-center gap-4">
-                  <div className="w-px h-10 bg-[#c8c8c8]/20" />
+                <div key={label} style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                  <div style={{ width: 1, height: 40, background: 'rgba(200,200,200,0.2)' }} />
                   <div>
-                    <p className="text-[0.6rem] tracking-[0.3em] uppercase text-[#888] mb-1.5">{label}</p>
-                    <p className="font-display font-light text-[1.1rem] text-[#e8e8e8]">{val}</p>
+                    <p style={{ fontSize: '0.6rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#888', marginBottom: 6 }}>{label}</p>
+                    <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', fontWeight: 300 }}>{val}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <form onSubmit={handleBooking} className="flex flex-col">
+          <form onSubmit={handleBooking} style={{ display: 'flex', flexDirection: 'column' }}>
             {[
               { id: 'nome', label: 'Nome Completo', type: 'text', placeholder: 'O seu nome' },
               { id: 'telefone', label: 'Telefone', type: 'tel', placeholder: '+351 9xx xxx xxx' },
               { id: 'data', label: 'Data Preferida', type: 'date', placeholder: '' },
             ].map((field, i) => (
-              <div key={field.id} className={`relative border-b border-[#c8c8c8]/15 ${i === 0 ? 'border-t' : ''}`}>
-                <label htmlFor={field.id} className="block text-[0.6rem] tracking-[0.3em] uppercase text-[#888] pt-5 pb-1.5">
-                  {field.label}
-                </label>
-                <input
-                  type={field.type}
-                  id={field.id}
-                  name={field.id}
-                  placeholder={field.placeholder}
-                  required
-                  className="w-full bg-transparent border-none outline-none text-[#e8e8e8] font-body text-[0.85rem] pb-5 tracking-wide placeholder:text-[#888]/40"
-                />
+              <div key={field.id} style={{ borderBottom: '1px solid rgba(200,200,200,0.15)', borderTop: i === 0 ? '1px solid rgba(200,200,200,0.15)' : 'none' }}>
+                <label style={{ display: 'block', fontSize: '0.6rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#888', paddingTop: 20, paddingBottom: 6 }}>{field.label}</label>
+                <input type={field.type} id={field.id} name={field.id} placeholder={field.placeholder} required
+                  style={{ width: '100%', background: 'transparent', border: 'none', outline: 'none', color: '#e8e8e8', fontFamily: "'Didact Gothic', sans-serif", fontSize: '0.85rem', paddingBottom: 20, letterSpacing: '0.05em' }} />
               </div>
             ))}
-            <div className="relative border-b border-[#c8c8c8]/15">
-              <label htmlFor="servico" className="block text-[0.6rem] tracking-[0.3em] uppercase text-[#888] pt-5 pb-1.5">
-                Serviço
-              </label>
+            <div style={{ borderBottom: '1px solid rgba(200,200,200,0.15)' }}>
+              <label style={{ display: 'block', fontSize: '0.6rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#888', paddingTop: 20, paddingBottom: 6 }}>Serviço</label>
               <select id="servico" name="servico" required
-                className="w-full bg-transparent border-none outline-none text-[#e8e8e8] font-body text-[0.85rem] pb-5 tracking-wide">
-                <option value="" className="bg-[#111]">Seleccione um serviço</option>
-                <option value="corte" className="bg-[#111]">Corte Clássico — 15€</option>
-                <option value="barba" className="bg-[#111]">Barba Premium — 20€</option>
-                <option value="completo" className="bg-[#111]">Pacote Completo — 35€</option>
-                <option value="facial" className="bg-[#111]">Hidratação Facial — 25€</option>
-                <option value="coloracao" className="bg-[#111]">Coloração — 40€</option>
-                <option value="expresso" className="bg-[#111]">Corte Expresso — 12€</option>
+                style={{ width: '100%', background: '#111', border: 'none', outline: 'none', color: '#e8e8e8', fontFamily: "'Didact Gothic', sans-serif", fontSize: '0.85rem', paddingBottom: 20 }}>
+                <option value="">Seleccione um serviço</option>
+                <option value="corte">Corte Clássico — 15€</option>
+                <option value="barba">Barba Premium — 20€</option>
+                <option value="completo">Pacote Completo — 35€</option>
+                <option value="facial">Hidratação Facial — 25€</option>
+                <option value="coloracao">Coloração — 40€</option>
+                <option value="expresso">Corte Expresso — 12€</option>
               </select>
             </div>
-
-            <button
-              type="submit"
-              disabled={formStatus !== 'idle'}
-              className="mt-12 self-start bg-[#e8e8e8] text-[#080808] px-12 py-4 font-body text-[0.65rem] tracking-[0.3em] uppercase hover:bg-[#c8c8c8] hover:-translate-y-0.5 transition-all disabled:bg-[#888]"
-            >
+            <button type="submit" disabled={formStatus !== 'idle'}
+              style={{ marginTop: 48, alignSelf: 'flex-start', background: formStatus === 'sent' ? '#888' : '#e8e8e8', color: '#080808', border: 'none', padding: '18px 48px', fontFamily: "'Didact Gothic', sans-serif", fontSize: '0.65rem', letterSpacing: '0.3em', textTransform: 'uppercase', cursor: 'pointer', transition: 'background .3s' }}>
               {formStatus === 'idle' && 'Confirmar Agendamento'}
               {formStatus === 'sending' && 'A enviar...'}
               {formStatus === 'sent' && '✓ Agendamento Enviado'}
@@ -304,13 +280,14 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section className="px-15 py-30 grid grid-cols-1 md:grid-cols-2 gap-25 items-start" id="contacto">
-        <div className="flex flex-col gap-12 fade-up">
+      <section id="contacto" style={{ padding: '120px 60px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 100, alignItems: 'start' }}>
+        <div className="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: 48 }}>
           <div>
-            <p className="text-[0.65rem] tracking-[0.4em] uppercase text-[#888] mb-5 flex items-center gap-4 before:block before:w-8 before:h-px before:bg-[#888]">
+            <p style={{ fontSize: '0.65rem', letterSpacing: '0.4em', textTransform: 'uppercase', color: '#888', marginBottom: 20, display: 'flex', alignItems: 'center', gap: 16 }}>
+              <span style={{ display: 'block', width: 30, height: 1, background: '#888' }} />
               Encontre-nos
             </p>
-            <h2 className="font-display font-light text-[#e8e8e8]" style={{ fontSize: 'clamp(36px,5vw,64px)' }}>Contacto</h2>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(36px,5vw,64px)', fontWeight: 300 }}>Contacto</h2>
           </div>
           {[
             { label: 'Morada', value: 'Rua da Elegância, 42\n1200-000 Lisboa' },
@@ -318,30 +295,29 @@ export default function Home() {
             { label: 'Email', value: 'info@elegancestudio.pt' },
           ].map(c => (
             <div key={c.label}>
-              <p className="text-[0.6rem] tracking-[0.35em] uppercase text-[#888] mb-3">{c.label}</p>
-              <p className="font-display font-light text-[1.4rem] text-[#e8e8e8] leading-snug whitespace-pre-line">{c.value}</p>
+              <p style={{ fontSize: '0.6rem', letterSpacing: '0.35em', textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{c.label}</p>
+              <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, lineHeight: 1.4, whiteSpace: 'pre-line' }}>{c.value}</p>
             </div>
           ))}
         </div>
-
-        <div className="h-[400px] bg-[#1a1a1a] border border-[#c8c8c8]/8 flex flex-col items-center justify-center gap-4 fade-up">
-          <span className="text-4xl opacity-30">📍</span>
-          <span className="text-[0.65rem] tracking-[0.3em] uppercase text-[#888] opacity-50">Mapa — Em breve</span>
+        <div className="fade-up" style={{ height: 400, background: '#1a1a1a', border: '1px solid rgba(200,200,200,0.08)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
+          <span style={{ fontSize: '2rem', opacity: 0.3 }}>📍</span>
+          <span style={{ fontSize: '0.65rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#888', opacity: 0.5 }}>Mapa — Em breve</span>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="px-15 py-15 border-t border-[#c8c8c8]/8 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="flex items-center">
-          <img src="/logo.png" alt="Elegance Studio" className="h-8 w-auto invert opacity-40 hover:opacity-70 transition-opacity" />
-        </div>
-        <div className="text-[0.6rem] tracking-[0.2em] text-[#c8c8c8]/25">© 2025 Elegance Studio. Todos os direitos reservados.</div>
-        <div className="flex gap-6">
+      <footer style={{ padding: '60px', borderTop: '1px solid rgba(200,200,200,0.08)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 24 }}>
+        <img src="/logo.png" alt="Elegance Studio" style={{ height: 32, width: 'auto', filter: 'invert(1)', opacity: 0.4 }} />
+        <div style={{ fontSize: '0.6rem', letterSpacing: '0.2em', color: 'rgba(200,200,200,0.25)' }}>© 2025 Elegance Studio. Todos os direitos reservados.</div>
+        <div style={{ display: 'flex', gap: 24 }}>
           {['Instagram', 'Facebook', 'WhatsApp'].map(s => (
-            <a key={s} href="#" className="text-[0.6rem] tracking-[0.2em] uppercase text-[#888] no-underline hover:text-[#e8e8e8] transition-colors">{s}</a>
+            <a key={s} href="#" style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#888', textDecoration: 'none' }}
+              onMouseEnter={e => (e.currentTarget.style.color = '#e8e8e8')}
+              onMouseLeave={e => (e.currentTarget.style.color = '#888')}>{s}</a>
           ))}
         </div>
       </footer>
-    </>
+    </div>
   )
 }
