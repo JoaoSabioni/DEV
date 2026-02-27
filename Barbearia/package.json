@@ -5,12 +5,12 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@prisma/client": "6.1.0",
+    "@prisma/client": "^7.4.1",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
-    "prisma": "6.1.0"
+    "prisma": "^7.4.1"
   }
 }
