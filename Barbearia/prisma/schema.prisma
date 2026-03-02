@@ -1,9 +1,11 @@
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
 datasource db {
   provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model Agendamento {
@@ -12,5 +14,5 @@ model Agendamento {
   telefone  String
   servico   String
   data      DateTime
-  criadoEm DateTime @default(now())
+  criadoEm  DateTime @default(now())
 }

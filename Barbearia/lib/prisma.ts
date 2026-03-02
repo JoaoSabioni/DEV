@@ -1,16 +1,11 @@
-import { PrismaClient } from '@prisma/client';
-import { PrismaPg } from '@prisma/adapter-pg';
-import { Pool } from 'pg';
+import { PrismaClient } from "@prisma/client";
 
-const pool = new Pool({
-  connectionString: process.env.DIRECT_URL!,
-});
-
-const adapter = new PrismaPg(pool);
-
-const globalForPrisma = globalThis as unknown as { prisma: PrismaClient };
+const globalForPrisma = global as unknown as { prisma: PrismaClient };
 
 export const prisma =
-  globalForPrisma.prisma || new PrismaClient({ adapter });
+  globalForPrisma.prisma ||
+  new PrismaClient({
+    log: ["error"], // Apenas erros para manter os logs limpos e otimizados
+  });
 
-if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
+if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
