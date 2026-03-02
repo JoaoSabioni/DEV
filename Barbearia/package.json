@@ -1,14 +1,28 @@
 {
+  "name": "barbearia",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "next": "15.2.4",
     "@prisma/client": "6.1.0",
-    "pg": "^8.13.3"
+    "@tailwindcss/postcss": "^4.2.1",
+    "next": "15.2.4",
+    "pg": "^8.13.3",
+    "postcss": "^8.5.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
-    "prisma": "6.1.0",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "prisma": "6.1.0",
     "typescript": "latest"
   }
 }
