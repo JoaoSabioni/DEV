@@ -1,11 +1,14 @@
-import type { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
-  images: {
-    formats: ['image/avif', 'image/webp'],
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/main',
+        permanent: true,
+      },
+    ]
   },
-  compress: true,
-  serverExternalPackages: ['@prisma/client', 'prisma'],
 }
 
 export default nextConfig

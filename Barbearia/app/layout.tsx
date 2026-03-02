@@ -3,8 +3,8 @@ import React from 'react'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Elegance Studio – Barbearia Premium',
-  description: 'Onde a tradição encontra a sofisticação.',
+  title: 'Elegance Studio | Barbearia',
+  description: 'Excelência técnica em Pinhal Novo.',
 }
 
 export default function RootLayout({
@@ -14,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <body>{children}</body>
+      <body className="antialiased bg-black">
+        {children}
+      </body>
     </html>
   )
 }
