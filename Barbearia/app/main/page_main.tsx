@@ -74,6 +74,18 @@ export default function PageMain() {
       <section className="relative min-h-[90vh] flex items-center px-6 md:px-8 pt-20 overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:80px_80px]" />
 
+        {/* Imagem fundo — só mobile */}
+        <div className="absolute inset-0 md:hidden">
+          <Image
+            src="/Fotos_loja/loja1.png"
+            alt="Elegance Studio"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/70" />
+        </div>
+
         <div className="absolute right-0 top-0 bottom-0 w-[45%] hidden md:block">
           <Image
             src="/Fotos_loja/loja1.png"
