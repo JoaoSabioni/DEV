@@ -224,6 +224,33 @@ function PageMain() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-1db6aff749dfda75" + " " + "absolute inset-0 md:hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/Fotos_loja/loja1.png",
+                                alt: "Elegance Studio",
+                                fill: true,
+                                className: "object-cover object-center",
+                                priority: true
+                            }, void 0, false, {
+                                fileName: "[project]/app/main/page_main.tsx",
+                                lineNumber: 79,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-1db6aff749dfda75" + " " + "absolute inset-0 bg-black/70"
+                            }, void 0, false, {
+                                fileName: "[project]/app/main/page_main.tsx",
+                                lineNumber: 86,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/main/page_main.tsx",
+                        lineNumber: 78,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "jsx-1db6aff749dfda75" + " " + "absolute right-0 top-0 bottom-0 w-[45%] hidden md:block",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -234,27 +261,27 @@ function PageMain() {
                                 priority: true
                             }, void 0, false, {
                                 fileName: "[project]/app/main/page_main.tsx",
-                                lineNumber: 78,
+                                lineNumber: 90,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "jsx-1db6aff749dfda75" + " " + "absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent"
                             }, void 0, false, {
                                 fileName: "[project]/app/main/page_main.tsx",
-                                lineNumber: 85,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "jsx-1db6aff749dfda75" + " " + "absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"
                             }, void 0, false, {
                                 fileName: "[project]/app/main/page_main.tsx",
-                                lineNumber: 86,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/main/page_main.tsx",
-                        lineNumber: 77,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -269,14 +296,14 @@ function PageMain() {
                                             className: "jsx-1db6aff749dfda75" + " " + "w-12 h-px bg-zinc-800"
                                         }, void 0, false, {
                                             fileName: "[project]/app/main/page_main.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 104,
                                             columnNumber: 15
                                         }, this),
                                         " PINHAL NOVO · EST. 2025"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/main/page_main.tsx",
-                                    lineNumber: 91,
+                                    lineNumber: 103,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -287,7 +314,7 @@ function PageMain() {
                                             className: "jsx-1db6aff749dfda75"
                                         }, void 0, false, {
                                             fileName: "[project]/app/main/page_main.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 107,
                                             columnNumber: 23
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -295,13 +322,13 @@ function PageMain() {
                                             children: "STUDIO"
                                         }, void 0, false, {
                                             fileName: "[project]/app/main/page_main.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 107,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/main/page_main.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 106,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -310,18 +337,18 @@ function PageMain() {
                                     children: "RESERVAR AGORA"
                                 }, void 0, false, {
                                     fileName: "[project]/app/main/page_main.tsx",
-                                    lineNumber: 97,
+                                    lineNumber: 109,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/main/page_main.tsx",
-                            lineNumber: 90,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/main/page_main.tsx",
-                        lineNumber: 89,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this)
                 ]
@@ -344,7 +371,7 @@ function PageMain() {
                                     children: "Preçário"
                                 }, void 0, false, {
                                     fileName: "[project]/app/main/page_main.tsx",
-                                    lineNumber: 106,
+                                    lineNumber: 118,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -355,20 +382,20 @@ function PageMain() {
                                             className: "jsx-1db6aff749dfda75" + " " + "w-8 h-px bg-zinc-800 group-hover:w-12 transition-all"
                                         }, void 0, false, {
                                             fileName: "[project]/app/main/page_main.tsx",
-                                            lineNumber: 108,
+                                            lineNumber: 120,
                                             columnNumber: 15
                                         }, this),
                                         " Ver Detalhes"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/main/page_main.tsx",
-                                    lineNumber: 107,
+                                    lineNumber: 119,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/main/page_main.tsx",
-                            lineNumber: 105,
+                            lineNumber: 117,
                             columnNumber: 11
                         }, this),
                         SERVICES.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -382,7 +409,7 @@ function PageMain() {
                                                 children: s.num
                                             }, void 0, false, {
                                                 fileName: "[project]/app/main/page_main.tsx",
-                                                lineNumber: 114,
+                                                lineNumber: 126,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -390,7 +417,7 @@ function PageMain() {
                                                 children: s.name
                                             }, void 0, false, {
                                                 fileName: "[project]/app/main/page_main.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 127,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -398,13 +425,13 @@ function PageMain() {
                                                 children: s.desc
                                             }, void 0, false, {
                                                 fileName: "[project]/app/main/page_main.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 128,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/main/page_main.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 125,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -412,24 +439,24 @@ function PageMain() {
                                         children: s.price
                                     }, void 0, false, {
                                         fileName: "[project]/app/main/page_main.tsx",
-                                        lineNumber: 118,
+                                        lineNumber: 130,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, s.num, true, {
                                 fileName: "[project]/app/main/page_main.tsx",
-                                lineNumber: 112,
+                                lineNumber: 124,
                                 columnNumber: 13
                             }, this))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/main/page_main.tsx",
-                    lineNumber: 104,
+                    lineNumber: 116,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/main/page_main.tsx",
-                lineNumber: 103,
+                lineNumber: 115,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -443,7 +470,7 @@ function PageMain() {
                                 children: "Trabalhos Recentes"
                             }, void 0, false, {
                                 fileName: "[project]/app/main/page_main.tsx",
-                                lineNumber: 127,
+                                lineNumber: 139,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -451,20 +478,20 @@ function PageMain() {
                                 children: "O Nosso Trabalho"
                             }, void 0, false, {
                                 fileName: "[project]/app/main/page_main.tsx",
-                                lineNumber: 128,
+                                lineNumber: 140,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "jsx-1db6aff749dfda75" + " " + "w-16 h-px bg-zinc-700 mx-auto mt-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/main/page_main.tsx",
-                                lineNumber: 129,
+                                lineNumber: 141,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/main/page_main.tsx",
-                        lineNumber: 126,
+                        lineNumber: 138,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -490,22 +517,22 @@ function PageMain() {
                                         sizes: "200px"
                                     }, void 0, false, {
                                         fileName: "[project]/app/main/page_main.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 148,
                                         columnNumber: 17
                                     }, this)
                                 }, i, false, {
                                     fileName: "[project]/app/main/page_main.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 147,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/main/page_main.tsx",
-                            lineNumber: 133,
+                            lineNumber: 145,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/main/page_main.tsx",
-                        lineNumber: 132,
+                        lineNumber: 144,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -530,28 +557,28 @@ function PageMain() {
                                         sizes: "200px"
                                     }, void 0, false, {
                                         fileName: "[project]/app/main/page_main.tsx",
-                                        lineNumber: 146,
+                                        lineNumber: 158,
                                         columnNumber: 17
                                     }, this)
                                 }, i, false, {
                                     fileName: "[project]/app/main/page_main.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 157,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/main/page_main.tsx",
-                            lineNumber: 143,
+                            lineNumber: 155,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/main/page_main.tsx",
-                        lineNumber: 142,
+                        lineNumber: 154,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/main/page_main.tsx",
-                lineNumber: 125,
+                lineNumber: 137,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -562,12 +589,12 @@ function PageMain() {
                     children: "ELEGANCE STUDIO © 2026 · PINHAL NOVO · PORTUGAL"
                 }, void 0, false, {
                     fileName: "[project]/app/main/page_main.tsx",
-                    lineNumber: 155,
+                    lineNumber: 167,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/main/page_main.tsx",
-                lineNumber: 154,
+                lineNumber: 166,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
