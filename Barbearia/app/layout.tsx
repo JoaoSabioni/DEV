@@ -5,6 +5,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Elegance Studio | Barbearia',
   description: 'Excelência técnica em Pinhal Novo.',
+  icons: {
+    icon: '/logo.png',
+  },
 }
 
 export default function RootLayout({

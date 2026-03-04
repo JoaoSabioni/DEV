@@ -1,0 +1,279 @@
+[00:00:00.563] Server  LOG     ✓ Ready in 405ms
+[00:00:05.488] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/1.jpg" "received" null
+[00:00:05.489] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/3.jpg" "received" null
+[00:00:05.490] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/4.jpg" "received" null
+[00:00:05.490] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/2.jpg" "received" null
+[00:00:05.491] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/6.jpg" "received" null
+[00:00:05.502] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.502] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.502] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/5.jpg" "received" null
+[00:09:15.741] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/7.jpg" "received" null
+[00:09:15.742] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/8.jpg" "received" null
+[00:09:15.742] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/9.jpg" "received" null
+[00:09:15.748] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/11.jpg" "received" null
+[00:09:15.749] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/10.jpg" "received" null
+[00:09:15.749] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/12.jpg" "received" null
+[00:09:15.793] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/2.jpg" "received" null
+[00:09:15.795] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/1.jpg" "received" null
+[00:09:15.796] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/3.jpg" "received" null
+[00:09:16.844] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/1.jpg" "received" null
+[00:09:16.847] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/2.jpg" "received" null
+[00:09:16.849] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/3.jpg" "received" null
+[00:09:16.850] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/4.jpg" "received" null
+[00:09:16.875] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:16.878] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/5.jpg" "received" null
+[00:09:16.883] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/6.jpg" "received" null
+[00:09:16.972] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:18.707] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/7.jpg" "received" null
+[00:09:21.625] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/8.jpg" "received" null
+[00:09:24.546] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/9.jpg" "received" null
+[00:09:27.460] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/10.jpg" "received" null
+[00:09:30.376] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/11.jpg" "received" null
+[00:09:33.296] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/12.jpg" "received" null
+[00:09:36.215] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/1.jpg" "received" null
+[00:09:39.125] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/2.jpg" "received" null
+[00:09:42.044] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/3.jpg" "received" null
+[00:09:44.958] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/4.jpg" "received" null
+[00:09:47.876] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/5.jpg" "received" null
+[00:09:50.794] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/6.jpg" "received" null
+[00:13:32.065] Server  LOG     ✓ Compiled in 45ms
+[00:13:32.184] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/5.jpg" "received" null
+[00:13:32.185] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/1.jpg" "received" null
+[00:13:32.185] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/4.jpg" "received" null
+[00:13:32.186] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/6.jpg" "received" null
+[00:13:32.186] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/2.jpg" "received" null
+[00:13:32.187] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/3.jpg" "received" null
+[00:13:33.895] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/7.jpg" "received" null
+[00:13:36.813] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/8.jpg" "received" null
+[00:13:39.732] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/9.jpg" "received" null
+[00:13:42.653] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/10.jpg" "received" null
+[00:13:45.566] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/11.jpg" "received" null
+[00:13:48.481] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/12.jpg" "received" null
+[00:13:51.397] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/1.jpg" "received" null
+[00:13:54.309] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/2.jpg" "received" null
+[00:13:57.228] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/3.jpg" "received" null
+[00:14:00.144] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/4.jpg" "received" null
+[00:14:03.061] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/5.jpg" "received" null
+[00:14:05.981] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/galeria/6.jpg" "received" null
+[00:17:02.659] Server  LOG     ✓ Compiled in 27ms
+[00:19:22.699] Server  LOG     ✓ Compiled in 22ms
+[00:22:57.579] Server  LOG     ✓ Compiled in 24ms
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu5.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu6.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu6.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu7.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu7.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi7.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi7.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi8.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi8.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_loja/loja2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_loja/loja2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_loja/loja3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_loja/loja3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi5.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_loja/loja4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_loja/loja4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi6.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_edi/edi6.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu8.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Abreu/abreu8.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas5.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas8.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas8.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas7.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas7.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas6.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas6.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas9.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas9.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:22:57.691] Browser WARN    Image with src "/Fotos_Tomas/tomas2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.442] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu5.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu8.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu8.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu6.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu6.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu7.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu7.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Abreu/abreu4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi7.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi7.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi5.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi8.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi8.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_loja/loja2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_loja/loja2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_loja/loja3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_loja/loja3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_loja/loja4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_loja/loja4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas6.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas6.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas5.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi6.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_edi/edi6.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas7.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas7.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas9.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas9.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas8.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas8.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:03.588] Browser WARN    Image with src "/Fotos_Tomas/tomas2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.785] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:30.935] Browser WARN    Image with src "/Fotos_loja/loja4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_loja/loja4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas5.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas6.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas6.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu6.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu6.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu7.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu7.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu8.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu8.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi6.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi6.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi7.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi7.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi8.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi8.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_loja/loja2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_loja/loja2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_loja/loja3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_loja/loja3.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas7.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas7.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas2.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_edi/edi5.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Abreu/abreu5.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas4.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas4.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas8.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas8.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas9.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:23:30.935] Browser WARN    Image with src "/Fotos_Tomas/tomas9.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:25:04.491] Server  LOG     ✓ Compiled in 19ms
+[00:29:42.127] Server  LOG     ✓ Compiled in 16ms
+[00:32:33.388] Server  LOG     ✓ Compiled in 20ms
+[00:32:49.908] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:03.765] Server  LOG     ✓ Compiled in 27ms
+[00:34:22.681] Server  LOG     ✓ Compiled in 13ms
+[00:34:29.366] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:34:29.366] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:35:18.502] Server  LOG     ✓ Compiled in 12ms
+[00:35:26.970] Server  LOG     ✓ Compiled in 11ms
+[00:35:41.200] Server  LOG     ✓ Compiled in 13ms
+[00:35:41.293] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 02
+[00:35:56.830] Server  LOG     ✓ Compiled in 14ms
+[00:36:08.082] Server  LOG     ✓ Compiled in 11ms
+[00:36:24.216] Server  LOG     ✓ Compiled in 13ms
+[00:40:07.702] Server  LOG     ✓ Compiled in 21ms
+[00:40:08.017] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:40:14.637] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:14.762] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:41:29.342] Server  LOG     ✓ Compiled in 12ms
+[00:41:32.568] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:32.695] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:41:36.776] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:36.901] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:42:14.143] Server  LOG     ✓ Compiled in 14ms
+[00:44:24.296] Server  LOG     ✓ Compiled in 26ms
+[00:46:33.290] Server  LOG     ✓ Compiled in 46ms
+[00:47:48.658] Server  LOG     ✓ Compiled in 15ms
+[00:47:53.487] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:53.630] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:57:19.509] Server  LOG     ✓ Compiled in 13ms
+[00:57:19.618] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:23.088] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:23.216] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:23.216] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:01:05.154] Server  LOG     ✓ Compiled in 22ms
+[01:07:23.328] Server  LOG     ✓ Compiled in 16ms
+[01:07:32.745] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:25:33.469] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/servicos/page_servicos.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:25:33.498] Server  LOG     ✓ Compiled in 25ms
+[01:25:33.683] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:25:34.660] Browser WARN    Image with src "/Fotos_loja/loja1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:25:39.652] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
