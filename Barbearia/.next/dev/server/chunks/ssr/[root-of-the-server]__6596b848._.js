@@ -110,8 +110,8 @@ function ServicosPage() {
                                         lineNumber: 31,
                                         columnNumber: 13
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "/main#contacto",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/contactar",
                                         className: "text-[11px] tracking-[0.2em] uppercase text-black bg-white px-6 py-2.5 font-bold hover:bg-zinc-200 transition-all",
                                         children: "CONTACTO"
                                     }, void 0, false, {
@@ -188,8 +188,8 @@ function ServicosPage() {
                                     lineNumber: 49,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "/main#contacto",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/contactar",
                                     onClick: ()=>setMenuOpen(false),
                                     className: "text-[11px] tracking-[0.3em] uppercase text-black bg-white px-6 py-3 font-bold text-center hover:bg-zinc-200 transition-all",
                                     children: "CONTACTO"
@@ -221,10 +221,10 @@ function ServicosPage() {
                     className: "max-w-7xl mx-auto",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center gap-4 text-zinc-600 text-[11px] tracking-[0.5em] uppercase mb-8",
+                            className: "flex items-center gap-4 text-zinc-400 text-[11px] tracking-[0.5em] uppercase mb-8",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "w-12 h-px bg-zinc-800"
+                                    className: "w-12 h-px bg-zinc-500"
                                 }, void 0, false, {
                                     fileName: "[project]/app/servicos/page_servicos.tsx",
                                     lineNumber: 59,
@@ -270,7 +270,7 @@ function ServicosPage() {
                             className: "py-10 md:py-14 grid grid-cols-[auto_1fr_auto] md:grid-cols-[80px_1fr_auto_auto] items-center gap-6 md:gap-12",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-[11px] text-zinc-700 tracking-widest font-mono",
+                                    className: "text-[11px] text-zinc-500 tracking-widest font-mono",
                                     children: s.num
                                 }, void 0, false, {
                                     fileName: "[project]/app/servicos/page_servicos.tsx",
@@ -288,7 +288,7 @@ function ServicosPage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: `text-[11px] text-zinc-500 tracking-wider uppercase italic mt-2 transition-all duration-500 ${hovered === i ? 'opacity-100' : 'opacity-0 md:opacity-60'}`,
+                                            className: `text-[11px] text-zinc-400 tracking-wider uppercase italic mt-2 transition-all duration-500 ${hovered === i ? 'opacity-100' : 'opacity-0 md:opacity-60'}`,
                                             children: s.desc
                                         }, void 0, false, {
                                             fileName: "[project]/app/servicos/page_servicos.tsx",
@@ -302,7 +302,7 @@ function ServicosPage() {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: `hidden md:block text-[11px] text-zinc-500 max-w-[220px] leading-relaxed transition-all duration-500 ${hovered === i ? 'opacity-100' : 'opacity-0'}`,
+                                    className: `hidden md:block text-[11px] text-zinc-400 max-w-[220px] leading-relaxed transition-all duration-500 ${hovered === i ? 'opacity-100' : 'opacity-0'}`,
                                     children: s.detail
                                 }, void 0, false, {
                                     fileName: "[project]/app/servicos/page_servicos.tsx",
@@ -310,7 +310,7 @@ function ServicosPage() {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: `font-serif text-[clamp(2rem,4vw,56px)] transition-all duration-500 ${hovered === i ? 'text-white' : 'text-zinc-600'}`,
+                                    className: `font-serif text-[clamp(2rem,4vw,56px)] transition-all duration-500 ${hovered === i ? 'text-white' : 'text-zinc-500'}`,
                                     children: s.price
                                 }, void 0, false, {
                                     fileName: "[project]/app/servicos/page_servicos.tsx",
@@ -337,17 +337,17 @@ function ServicosPage() {
                 className: "py-24 md:py-32 px-6 md:px-8 text-center border-t border-white/5 mt-0",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-[10px] tracking-[0.8em] text-zinc-600 uppercase mb-6",
+                        className: "text-[10px] tracking-[0.8em] text-zinc-400 uppercase mb-6",
                         children: "Pronto para marcar?"
                     }, void 0, false, {
                         fileName: "[project]/app/servicos/page_servicos.tsx",
                         lineNumber: 111,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                        href: "/main#contacto",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/contactar",
                         className: "inline-block border border-white/20 px-12 md:px-20 py-5 md:py-6 text-[11px] tracking-[0.5em] uppercase hover:bg-white hover:text-black font-bold transition-all duration-500",
-                        children: "RESERVAR AGORA"
+                        children: "CONTACTAR"
                     }, void 0, false, {
                         fileName: "[project]/app/servicos/page_servicos.tsx",
                         lineNumber: 112,
@@ -362,7 +362,7 @@ function ServicosPage() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
                 className: "py-14 px-6 md:px-8 border-t border-white/5 text-center bg-zinc-950/30",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-[10px] tracking-[0.6em] md:tracking-[0.8em] text-zinc-700 uppercase",
+                    className: "text-[10px] tracking-[0.6em] md:tracking-[0.8em] text-zinc-500 uppercase",
                     children: "ELEGANCE STUDIO © 2026 · PINHAL NOVO · PORTUGAL"
                 }, void 0, false, {
                     fileName: "[project]/app/servicos/page_servicos.tsx",

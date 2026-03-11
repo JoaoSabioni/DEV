@@ -156,7 +156,7 @@ export default function PageGaleria() {
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/servicos" className="text-[12px] tracking-[0.2em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Serviços</Link>
             <Link href="/galeria" className="text-[12px] tracking-[0.2em] uppercase font-semibold text-white transition-colors">Galeria</Link>
-            <a href="/main#contacto" className="text-[11px] tracking-[0.2em] uppercase text-black bg-white px-6 py-2.5 font-bold hover:bg-zinc-200 transition-all">CONTACTO</a>
+            <Link href="/contactar" className="text-[11px] tracking-[0.2em] uppercase text-black bg-white px-6 py-2.5 font-bold hover:bg-zinc-200 transition-all">CONTACTO</Link>
           </div>
           <button className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[6px]" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
             <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
@@ -168,7 +168,7 @@ export default function PageGaleria() {
           <div className="flex flex-col px-6 py-6 gap-6">
             <Link href="/servicos" onClick={() => setMenuOpen(false)} className="text-[12px] tracking-[0.3em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Serviços</Link>
             <Link href="/galeria" onClick={() => setMenuOpen(false)} className="text-[12px] tracking-[0.3em] uppercase font-semibold text-white">Galeria</Link>
-            <a href="/main#contacto" onClick={() => setMenuOpen(false)} className="text-[11px] tracking-[0.3em] uppercase text-black bg-white px-6 py-3 font-bold text-center hover:bg-zinc-200 transition-all">CONTACTO</a>
+            <Link href="/contactar" onClick={() => setMenuOpen(false)} className="text-[11px] tracking-[0.3em] uppercase text-black bg-white px-6 py-3 font-bold text-center hover:bg-zinc-200 transition-all">CONTACTO</Link>
           </div>
         </div>
       </nav>
@@ -245,7 +245,7 @@ export default function PageGaleria() {
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
                   </div>
 
-                  {/* Info — empurrada para a direita com pl maior + justify-end no container */}
+                  {/* Info */}
                   <div className="flex flex-1 justify-end">
                     <div className="flex flex-col justify-center pl-10 md:pl-16 pr-0 py-10 md:py-0 gap-8 w-full md:max-w-[280px]
                                     border-t border-zinc-500/50 md:border-t-0 md:border-l md:border-zinc-500/50">
@@ -300,7 +300,7 @@ export default function PageGaleria() {
       </section>
 
       {/* Footer */}
-      <footer id="contacto" className="py-14 px-6 md:px-8 border-t border-white/5 text-center bg-zinc-950/30">
+      <footer className="py-14 px-6 md:px-8 border-t border-white/5 text-center bg-zinc-950/30">
         <p className="text-[10px] tracking-[0.6em] md:tracking-[0.8em] text-zinc-500 uppercase">ELEGANCE STUDIO © 2026 · PINHAL NOVO · PORTUGAL</p>
       </footer>
     </div>

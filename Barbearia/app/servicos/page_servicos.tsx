@@ -29,7 +29,7 @@ export default function ServicosPage() {
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/servicos" className="text-[12px] tracking-[0.2em] uppercase font-semibold text-white transition-colors">Serviços</Link>
             <Link href="/galeria" className="text-[12px] tracking-[0.2em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Galeria</Link>
-            <a href="/main#contacto" className="text-[11px] tracking-[0.2em] uppercase text-black bg-white px-6 py-2.5 font-bold hover:bg-zinc-200 transition-all">CONTACTO</a>
+            <Link href="/contactar" className="text-[11px] tracking-[0.2em] uppercase text-black bg-white px-6 py-2.5 font-bold hover:bg-zinc-200 transition-all">CONTACTO</Link>
           </div>
 
           <button
@@ -47,7 +47,7 @@ export default function ServicosPage() {
           <div className="flex flex-col px-6 py-6 gap-6">
             <Link href="/servicos" onClick={() => setMenuOpen(false)} className="text-[12px] tracking-[0.3em] uppercase font-semibold text-white">Serviços</Link>
             <Link href="/galeria" onClick={() => setMenuOpen(false)} className="text-[12px] tracking-[0.3em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Galeria</Link>
-            <a href="/main#contacto" onClick={() => setMenuOpen(false)} className="text-[11px] tracking-[0.3em] uppercase text-black bg-white px-6 py-3 font-bold text-center hover:bg-zinc-200 transition-all">CONTACTO</a>
+            <Link href="/contactar" onClick={() => setMenuOpen(false)} className="text-[11px] tracking-[0.3em] uppercase text-black bg-white px-6 py-3 font-bold text-center hover:bg-zinc-200 transition-all">CONTACTO</Link>
           </div>
         </div>
       </nav>
@@ -109,12 +109,12 @@ export default function ServicosPage() {
       {/* CTA */}
       <section className="py-24 md:py-32 px-6 md:px-8 text-center border-t border-white/5 mt-0">
         <p className="text-[10px] tracking-[0.8em] text-zinc-400 uppercase mb-6">Pronto para marcar?</p>
-        <a
-          href="/main#contacto"
+        <Link
+          href="/contactar"
           className="inline-block border border-white/20 px-12 md:px-20 py-5 md:py-6 text-[11px] tracking-[0.5em] uppercase hover:bg-white hover:text-black font-bold transition-all duration-500"
         >
           CONTACTAR
-        </a>
+        </Link>
       </section>
 
       {/* Footer */}

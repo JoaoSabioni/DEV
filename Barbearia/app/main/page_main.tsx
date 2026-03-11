@@ -28,7 +28,7 @@ export default function PageMain() {
   return (
     <div className="bg-black text-white font-sans selection:bg-white selection:text-black min-h-screen overflow-x-hidden">
 
-      {/* Header — py-1 to keep same total height while logo grows */}
+      {/* Header */}
       <nav className="fixed top-0 left-0 right-0 z-[100] border-b border-white/10 bg-black/95 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-1">
           <Link href="/main" className="transition-all hover:opacity-70 flex items-center">
@@ -45,7 +45,7 @@ export default function PageMain() {
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/servicos" className="text-[12px] tracking-[0.2em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Serviços</Link>
             <Link href="/galeria" className="text-[12px] tracking-[0.2em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Galeria</Link>
-            <a href="#contacto" className="text-[11px] tracking-[0.2em] uppercase text-black bg-white px-6 py-2.5 font-bold hover:bg-zinc-200 transition-all">CONTACTO</a>
+            <Link href="/contactar" className="text-[11px] tracking-[0.2em] uppercase text-black bg-white px-6 py-2.5 font-bold hover:bg-zinc-200 transition-all">CONTACTO</Link>
           </div>
 
           {/* Hamburger button */}
@@ -65,7 +65,7 @@ export default function PageMain() {
           <div className="flex flex-col px-6 py-6 gap-6">
             <Link href="/servicos" onClick={() => setMenuOpen(false)} className="text-[12px] tracking-[0.3em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Serviços</Link>
             <Link href="/galeria" onClick={() => setMenuOpen(false)} className="text-[12px] tracking-[0.3em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Galeria</Link>
-            <a href="#contacto" onClick={() => setMenuOpen(false)} className="text-[11px] tracking-[0.3em] uppercase text-black bg-white px-6 py-3 font-bold text-center hover:bg-zinc-200 transition-all">CONTACTO</a>
+            <Link href="/contactar" onClick={() => setMenuOpen(false)} className="text-[11px] tracking-[0.3em] uppercase text-black bg-white px-6 py-3 font-bold text-center hover:bg-zinc-200 transition-all">CONTACTO</Link>
           </div>
         </div>
       </nav>
@@ -106,7 +106,7 @@ export default function PageMain() {
             <h1 className="font-serif text-[clamp(3.5rem,12vw,140px)] leading-[0.85] font-medium uppercase mb-8 md:mb-10 tracking-tighter">
               ELEGANCE<br /><span className="text-zinc-700">STUDIO</span>
             </h1>
-            <a href="#contacto" className="inline-block border border-white/20 px-10 md:px-14 py-5 md:py-6 text-[11px] tracking-[0.5em] uppercase hover:bg-white hover:text-black font-bold transition-all duration-500">RESERVAR AGORA</a>
+            <Link href="/contactar" className="inline-block border border-white/20 px-10 md:px-14 py-5 md:py-6 text-[11px] tracking-[0.5em] uppercase hover:bg-white hover:text-black font-bold transition-all duration-500">MARCAR AGORA</Link>
           </div>
         </div>
       </section>
@@ -163,7 +163,7 @@ export default function PageMain() {
       </section>
 
       {/* Footer */}
-      <footer id="contacto" className="py-14 md:py-20 px-6 md:px-8 border-t border-white/5 text-center bg-zinc-950/30">
+      <footer className="py-14 md:py-20 px-6 md:px-8 border-t border-white/5 text-center bg-zinc-950/30">
         <p className="text-[10px] tracking-[0.6em] md:tracking-[0.8em] text-zinc-700 uppercase">ELEGANCE STUDIO © 2026 · PINHAL NOVO · PORTUGAL</p>
       </footer>
 
