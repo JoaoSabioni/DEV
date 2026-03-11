@@ -55,8 +55,8 @@ export default function ServicosPage() {
       {/* Page Header */}
       <section className="pt-36 md:pt-44 pb-16 md:pb-20 px-6 md:px-8 border-b border-white/5">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center gap-4 text-zinc-600 text-[11px] tracking-[0.5em] uppercase mb-8">
-            <span className="w-12 h-px bg-zinc-800" /> PINHAL NOVO · EST. 2025
+          <div className="flex items-center gap-4 text-zinc-400 text-[11px] tracking-[0.5em] uppercase mb-8">
+            <span className="w-12 h-px bg-zinc-500" /> PINHAL NOVO · EST. 2025
           </div>
           <h1 className="font-serif text-[clamp(3rem,10vw,120px)] leading-[0.85] font-medium uppercase tracking-tighter">
             SERVIÇOS
@@ -80,25 +80,25 @@ export default function ServicosPage() {
             <div className="py-10 md:py-14 grid grid-cols-[auto_1fr_auto] md:grid-cols-[80px_1fr_auto_auto] items-center gap-6 md:gap-12">
 
               {/* Number */}
-              <span className="text-[11px] text-zinc-700 tracking-widest font-mono">{s.num}</span>
+              <span className="text-[11px] text-zinc-500 tracking-widest font-mono">{s.num}</span>
 
               {/* Name + desc */}
               <div>
                 <h2 className={`font-serif text-[clamp(1.8rem,4vw,52px)] font-light uppercase tracking-tight transition-all duration-500 ${hovered === i ? 'translate-x-3' : ''}`}>
                   {s.name}
                 </h2>
-                <p className={`text-[11px] text-zinc-500 tracking-wider uppercase italic mt-2 transition-all duration-500 ${hovered === i ? 'opacity-100' : 'opacity-0 md:opacity-60'}`}>
+                <p className={`text-[11px] text-zinc-400 tracking-wider uppercase italic mt-2 transition-all duration-500 ${hovered === i ? 'opacity-100' : 'opacity-0 md:opacity-60'}`}>
                   {s.desc}
                 </p>
               </div>
 
               {/* Detail — só desktop ao hover */}
-              <p className={`hidden md:block text-[11px] text-zinc-500 max-w-[220px] leading-relaxed transition-all duration-500 ${hovered === i ? 'opacity-100' : 'opacity-0'}`}>
+              <p className={`hidden md:block text-[11px] text-zinc-400 max-w-[220px] leading-relaxed transition-all duration-500 ${hovered === i ? 'opacity-100' : 'opacity-0'}`}>
                 {s.detail}
               </p>
 
               {/* Price */}
-              <div className={`font-serif text-[clamp(2rem,4vw,56px)] transition-all duration-500 ${hovered === i ? 'text-white' : 'text-zinc-600'}`}>
+              <div className={`font-serif text-[clamp(2rem,4vw,56px)] transition-all duration-500 ${hovered === i ? 'text-white' : 'text-zinc-500'}`}>
                 {s.price}
               </div>
             </div>
@@ -108,18 +108,18 @@ export default function ServicosPage() {
 
       {/* CTA */}
       <section className="py-24 md:py-32 px-6 md:px-8 text-center border-t border-white/5 mt-0">
-        <p className="text-[10px] tracking-[0.8em] text-zinc-600 uppercase mb-6">Pronto para marcar?</p>
+        <p className="text-[10px] tracking-[0.8em] text-zinc-400 uppercase mb-6">Pronto para marcar?</p>
         <a
           href="/main#contacto"
           className="inline-block border border-white/20 px-12 md:px-20 py-5 md:py-6 text-[11px] tracking-[0.5em] uppercase hover:bg-white hover:text-black font-bold transition-all duration-500"
         >
-          RESERVAR AGORA
+          CONTACTAR
         </a>
       </section>
 
       {/* Footer */}
       <footer className="py-14 px-6 md:px-8 border-t border-white/5 text-center bg-zinc-950/30">
-        <p className="text-[10px] tracking-[0.6em] md:tracking-[0.8em] text-zinc-700 uppercase">ELEGANCE STUDIO © 2026 · PINHAL NOVO · PORTUGAL</p>
+        <p className="text-[10px] tracking-[0.6em] md:tracking-[0.8em] text-zinc-500 uppercase">ELEGANCE STUDIO © 2026 · PINHAL NOVO · PORTUGAL</p>
       </footer>
     </div>
   )
