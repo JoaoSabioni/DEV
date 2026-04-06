@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '../components/Navbar'
@@ -36,14 +36,16 @@ const HORARIOS = [
 export default function PageContactar() {
   const hoje = new Date()
   const anoAtual = hoje.getFullYear()
+  const mesAtualNum = hoje.getMonth() + 1
 
+  // Estados com inicialização inteligente
   const [selectedBarbeiro, setSelectedBarbeiro] = useState<number | null>(null)
   const [selectedServicos, setSelectedServicos] = useState<string[]>([])
   const [nome, setNome] = useState('')
   const [mensagem, setMensagem] = useState('')
-  const [dia, setDia] = useState('')
-  const [mes, setMes] = useState('')
-  const [ano, setAno] = useState(String(anoAtual)) // Ano automático
+  const [dia, setDia] = useState(String(hoje.getDate()).padStart(2, '0'))
+  const [mes, setMes] = useState(String(mesAtualNum).padStart(2, '0'))
+  const [ano] = useState(String(anoAtual)) 
   const [horario, setHorario] = useState('')
   const [horarioOpen, setHorarioOpen] = useState(false)
 
@@ -55,13 +57,12 @@ export default function PageContactar() {
   const diasNoMes = (m: string, a: string) => (!m || !a) ? 31 : new Date(parseInt(a), parseInt(m), 0).getDate()
 
   const isDiaValido = (d: string, m: string, a: string) => {
-    if (!d || !m || !a) return true
     const dataSelecionada = new Date(parseInt(a), parseInt(m) - 1, parseInt(d))
     const hojeSemHoras = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate())
     return dataSelecionada >= hojeSemHoras
   }
 
-  // Lógica Dinâmica de Horários
+  // Lógica de Horários com Margem de 60 min
   const horariosFiltrados = (() => {
     const isHoje = dia === String(hoje.getDate()).padStart(2, '0') && 
                    mes === String(hoje.getMonth() + 1).padStart(2, '0') && 
@@ -69,19 +70,16 @@ export default function PageContactar() {
 
     if (isHoje) {
       const agora = new Date()
-      const margemMinutos = 60 // Margem de 1 hora de antecedência
+      const margemMinutos = 60 
 
       return HORARIOS.filter(h => {
         const [horaH, minH] = h.split(':').map(Number)
         const dataHorario = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate(), horaH, minH)
-
-        // Regra 1: Se for hoje e passar das 12:00, bloqueia horários antes das 15:00
+        
+        // Bloqueio se passar das 12:00 para horários da manhã
         if (agora.getHours() >= 12 && horaH < 15) return false
 
-        // Regra 2: O horário pretendido tem de ser pelo menos 60 minutos superior à hora atual
-        const diffMs = dataHorario.getTime() - agora.getTime()
-        const diffMinutos = diffMs / 1000 / 60
-        
+        const diffMinutos = (dataHorario.getTime() - agora.getTime()) / 1000 / 60
         return diffMinutos >= margemMinutos
       })
     }
@@ -126,8 +124,8 @@ export default function PageContactar() {
       <Navbar activePage="contactar" />
 
       <section className="pt-36 md:pt-44 pb-16 md:pb-20 px-6 md:px-8 border-b border-white/5">
-        <div className="max-w-7xl mx-auto text-center md:text-left">
-          <div className="flex items-center justify-center md:justify-start gap-4 text-zinc-400 text-[11px] tracking-[0.5em] uppercase mb-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-4 text-zinc-400 text-[11px] tracking-[0.5em] uppercase mb-8">
             <span className="w-12 h-px bg-zinc-500" /> PINHAL NOVO · EST. 2025
           </div>
           <h1 className="font-serif text-[clamp(3rem,10vw,120px)] leading-[0.85] font-medium uppercase tracking-tighter">CONTACTAR</h1>
@@ -194,9 +192,14 @@ export default function PageContactar() {
                 </select>
                 <select value={mes} onChange={(e) => { setMes(e.target.value); setDia('') }} className="bg-black border border-white/20 px-4 py-4 text-[12px] text-white appearance-none cursor-pointer">
                   <option value="">Mês</option>
-                  {MESES.map((m, i) => <option key={i} value={String(i + 1).padStart(2, '0')}>{m}</option>)}
+                  {MESES.map((m, i) => {
+                    const vMes = i + 1;
+                    const mesPassou = vMes < mesAtualNum;
+                    return (
+                      <option key={i} value={String(vMes).padStart(2, '0')} disabled={mesPassou} className={mesPassou ? 'text-zinc-600' : 'text-white'}>{m}</option>
+                    )
+                  })}
                 </select>
-                {/* Ano Blindado - Apenas leitura */}
                 <select value={ano} disabled className="bg-black border border-white/20 px-4 py-4 text-[12px] text-zinc-500 appearance-none cursor-not-allowed">
                   <option value={anoAtual}>{anoAtual}</option>
                 </select>
@@ -224,7 +227,7 @@ export default function PageContactar() {
                         </button>
                       ))
                     ) : (
-                      <p className="col-span-full text-[10px] text-zinc-500 uppercase py-4">Sem horários disponíveis para hoje</p>
+                      <p className="col-span-full text-[10px] text-zinc-500 uppercase py-4 text-center">Sem horários disponíveis para hoje</p>
                     )}
                   </div>
                 </div>
@@ -238,13 +241,13 @@ export default function PageContactar() {
             </div>
           </div>
 
+          {/* Direita - Preview e Envio */}
           <div className="flex flex-col justify-start lg:pt-14 gap-8">
             <div className="border-b border-white/5 pb-10">
               <h2 className="font-serif text-[clamp(2rem,4vw,48px)] uppercase tracking-tighter leading-tight mb-4 text-center lg:text-left">Envia a<br />tua mensagem</h2>
               <p className="text-[12px] text-zinc-300 tracking-wider text-center lg:text-left leading-relaxed">Seleciona o barbeiro, o serviço e envia via WhatsApp.</p>
             </div>
 
-            {/* Preview */}
             {barbeiro && (
               <div className="border border-white/20 p-6 bg-white/[0.03]">
                 <p className="text-[9px] tracking-[0.6em] text-zinc-400 uppercase mb-4 text-center lg:text-left">Pré-visualização</p>
@@ -272,7 +275,7 @@ export default function PageContactar() {
             </button>
 
             <footer className="mt-auto">
-                <p className="text-[9px] text-zinc-700 tracking-wider leading-relaxed text-center lg:text-left">ELEGANCE STUDIO © {anoAtual} · PINHAL NOVO · PORTUGAL</p>
+                <p className="text-[9px] text-zinc-700 tracking-wider leading-relaxed text-center lg:text-left uppercase">ELEGANCE STUDIO © {anoAtual} · PINHAL NOVO · PORTUGAL</p>
             </footer>
           </div>
         </div>
