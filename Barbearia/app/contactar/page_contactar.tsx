@@ -30,6 +30,7 @@ const HORARIOS = [
   '09:00','09:30','10:00','10:30','11:00','11:30',
   '12:00','12:30','14:00','14:30','15:00','15:30',
   '16:00','16:30','17:00','17:30','18:00','18:30',
+  '19:00', '19:30', '20:00', '20:30', '21:00'
 ]
 
 export default function PageContactar() {
@@ -46,18 +47,37 @@ export default function PageContactar() {
   const barbeiro = selectedBarbeiro !== null ? BARBEIROS[selectedBarbeiro] : null
 
   const hoje = new Date()
-  const amanha = new Date(hoje)
-  amanha.setDate(hoje.getDate() + 1)
 
   const MESES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
   const DIAS_SEMANA = ['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado']
 
   const diasNoMes = (m: string, a: string) => (!m || !a) ? 31 : new Date(parseInt(a), parseInt(m), 0).getDate()
 
+  // Lógica: Permite selecionar hoje ou datas futuras
   const isDiaValido = (d: string, m: string, a: string) => {
     if (!d || !m || !a) return true
-    return new Date(parseInt(a), parseInt(m) - 1, parseInt(d)) >= amanha
+    const dataSelecionada = new Date(parseInt(a), parseInt(m) - 1, parseInt(d))
+    const hojeSemHoras = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate())
+    return dataSelecionada >= hojeSemHoras
   }
+
+  // Filtro Dinâmico de Horários: Se for hoje e > 12:00, só mostra >= 15:00
+  const horariosFiltrados = (() => {
+    const isHoje = dia === String(hoje.getDate()).padStart(2, '0') && 
+                   mes === String(hoje.getMonth() + 1).padStart(2, '0') && 
+                   ano === String(hoje.getFullYear())
+
+    if (isHoje) {
+      const horaAtual = hoje.getHours()
+      if (horaAtual >= 12) {
+        return HORARIOS.filter(h => {
+          const [hStr] = h.split(':')
+          return parseInt(hStr) >= 15
+        })
+      }
+    }
+    return HORARIOS
+  })()
 
   const dataLabel = (() => {
     if (!dia || !mes || !ano) return ''
@@ -67,11 +87,7 @@ export default function PageContactar() {
 
   const dataFormatada = dia && mes && ano ? `${dia}/${mes}/${ano}` : ''
 
-  const anosDisponiveis = (() => {
-    const a = []
-    for (let i = hoje.getFullYear(); i <= hoje.getFullYear() + 1; i++) a.push(i)
-    return a
-  })()
+  const anosDisponiveis = [hoje.getFullYear(), hoje.getFullYear() + 1]
 
   const isDisabled = (s: string) => (CONFLITOS[s] ?? []).some((c) => selectedServicos.includes(c))
 
@@ -89,7 +105,7 @@ export default function PageContactar() {
       dataFormatada ? `Data pretendida: *${dataFormatada}${horario ? ` às ${horario}` : ''}*` : '',
       mensagem ? `\n${mensagem}` : '',
       ``,
-      `Gostava de marcar uma consulta. Obrigado.`,
+      `Aguardo a vossa confirmação. Obrigado.`,
     ].filter((l) => l !== '')
     return encodeURIComponent(linhas.join('\n'))
   }
@@ -103,7 +119,6 @@ export default function PageContactar() {
     <div className="bg-black text-white font-sans selection:bg-white selection:text-black min-h-screen overflow-x-hidden">
       <Navbar activePage="contactar" />
 
-      {/* Page Header */}
       <section className="pt-36 md:pt-44 pb-16 md:pb-20 px-6 md:px-8 border-b border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 text-zinc-400 text-[11px] tracking-[0.5em] uppercase mb-8">
@@ -113,11 +128,9 @@ export default function PageContactar() {
         </div>
       </section>
 
-      {/* Conteúdo */}
       <section className="px-6 md:px-8 py-16 md:py-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
 
-          {/* Esquerda — passos */}
           <div className="flex flex-col gap-12">
             {/* 01 Barbeiro */}
             <div>
@@ -160,7 +173,6 @@ export default function PageContactar() {
                       key={i}
                       onClick={() => toggleServico(s)}
                       disabled={disabled}
-                      title={disabled ? 'Incompatível com o serviço selecionado' : undefined}
                       className={`flex items-center justify-between px-6 py-4 border text-left text-[12px] tracking-[0.1em] transition-all duration-300
                         ${isSelected ? 'border-white text-white bg-white/5'
                           : disabled ? 'border-white/5 text-zinc-600 cursor-not-allowed opacity-40'
@@ -199,10 +211,9 @@ export default function PageContactar() {
               <div className="grid grid-cols-3 gap-3">
                 <select value={dia} onChange={(e) => setDia(e.target.value)} className="bg-black border border-white/20 focus:border-white/60 outline-none px-4 py-4 text-[12px] tracking-wider text-white transition-all appearance-none cursor-pointer">
                   <option value="">Dia</option>
-                  {Array.from({ length: diasNoMes(mes, ano) }, (_, i) => i + 1).map((d) => {
-                    const dStr = String(d).padStart(2, '0')
-                    const valido = isDiaValido(dStr, mes, ano)
-                    return <option key={d} value={dStr} disabled={!valido} className={valido ? 'text-white' : 'text-zinc-600'}>{dStr}</option>
+                  {Array.from({ length: diasNoMes(mes, ano) }, (_, i) => String(i + 1).padStart(2, '0')).map((d) => {
+                    const valido = isDiaValido(d, mes, ano)
+                    return <option key={d} value={d} disabled={!valido} className={valido ? 'text-white' : 'text-zinc-600'}>{d}</option>
                   })}
                 </select>
                 <select value={mes} onChange={(e) => { setMes(e.target.value); setDia('') }} className="bg-black border border-white/20 focus:border-white/60 outline-none px-4 py-4 text-[12px] tracking-wider text-white transition-all appearance-none cursor-pointer">
@@ -227,10 +238,10 @@ export default function PageContactar() {
                 </div>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={`text-zinc-500 transition-transform duration-300 ${horarioOpen ? 'rotate-180' : ''}`}><path d="M6 9l6 6 6-6" /></svg>
               </button>
-              <div className={`overflow-hidden transition-all duration-500 ${horarioOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div className={`overflow-hidden transition-all duration-500 ${horarioOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="border border-t-0 border-white/20 px-6 py-5">
                   <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
-                    {HORARIOS.map((h) => (
+                    {horariosFiltrados.map((h) => (
                       <button key={h} onClick={() => { setHorario(horario === h ? '' : h); setHorarioOpen(false) }}
                         className={`py-3 border text-[11px] tracking-[0.15em] transition-all duration-200
                           ${horario === h ? 'border-white bg-white text-black font-semibold' : 'border-white/15 text-zinc-400 hover:border-white/50 hover:text-white'}`}>
@@ -279,7 +290,7 @@ export default function PageContactar() {
                     dataLabel ? `Data pretendida: ${dataLabel}${horario ? ` às ${horario}` : ''}` : '',
                     mensagem || '',
                     ``,
-                    `Gostava de marcar. Obrigado.`,
+                    `Aguardo a vossa confirmação. Obrigado.`,
                   ].filter((l) => l !== '').join('\n')}
                 </p>
               </div>
