@@ -6,9 +6,9 @@ import Link from 'next/link'
 import Navbar from '../components/Navbar'
 
 const BARBEIROS = [
-  { nome: 'Edi', cargo: 'Fundador', foto: '/Fotos_edi/edi2.png', whatsapp: '351912345678', instagram: 'edi.elegance' },
-  { nome: 'Tomas', cargo: 'Colaborador', foto: '/Fotos_Tomas/tomas2.png', whatsapp: '351923456789', instagram: 'tomas.elegance' },
-  { nome: 'Abreu', cargo: 'Colaborador', foto: '/Fotos_Abreu/abreu1.png', whatsapp: '351934567890', instagram: 'abreu.elegance' },
+  { nome: 'Edi', cargo: 'Fundador', foto: '/Fotos_edi/edi2.png', whatsapp: '351933320269', instagram: 'edi.elegance' },
+  { nome: 'Tomas', cargo: 'Colaborador', foto: '/Fotos_Tomas/tomas2.png', whatsapp: '351914302079', instagram: 'tomas.elegance' },
+  { nome: 'Abreu', cargo: 'Colaborador', foto: '/Fotos_Abreu/abreuPrincipal.jpg', whatsapp: '351913388301', instagram: 'abreu.elegance' },
 ]
 
 const SERVICOS = [
