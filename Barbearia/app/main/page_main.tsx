@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '../components/Navbar'
 
 const SERVICES = [
   { num: '01', name: 'CORTE Simples', desc: 'Execução técnica superior com acabamento à navalha.', price: '10€' },
@@ -23,81 +23,23 @@ const ROW2 = [
 ]
 
 export default function PageMain() {
-  const [menuOpen, setMenuOpen] = useState(false)
-
   return (
     <div className="bg-black text-white font-sans selection:bg-white selection:text-black min-h-screen overflow-x-hidden">
 
-      {/* Header */}
-      <nav className="fixed top-0 left-0 right-0 z-[100] border-b border-white/10 bg-black/95 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-1">
-          <Link href="/main" className="transition-all hover:opacity-70 flex items-center">
-            <Image
-              src="/logo.png"
-              alt="Elegance Studio"
-              height={90}
-              width={90}
-              className="h-[68px] md:h-[84px] w-auto"
-            />
-          </Link>
-
-          {/* Desktop nav */}
-          <div className="hidden md:flex gap-8 items-center">
-            <Link href="/servicos" className="text-[12px] tracking-[0.2em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Serviços</Link>
-            <Link href="/galeria" className="text-[12px] tracking-[0.2em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Galeria</Link>
-            <Link href="/contactar" className="text-[11px] tracking-[0.2em] uppercase text-black bg-white px-6 py-2.5 font-bold hover:bg-zinc-200 transition-all">CONTACTO</Link>
-          </div>
-
-          {/* Hamburger button */}
-          <button
-            className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[6px]"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Menu"
-          >
-            <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
-            <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-            <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
-          </button>
-        </div>
-
-        {/* Mobile menu dropdown */}
-        <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-64' : 'max-h-0'} bg-black/98 border-t border-white/5`}>
-          <div className="flex flex-col px-6 py-6 gap-6">
-            <Link href="/servicos" onClick={() => setMenuOpen(false)} className="text-[12px] tracking-[0.3em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Serviços</Link>
-            <Link href="/galeria" onClick={() => setMenuOpen(false)} className="text-[12px] tracking-[0.3em] uppercase font-semibold text-zinc-400 hover:text-white transition-colors">Galeria</Link>
-            <Link href="/contactar" onClick={() => setMenuOpen(false)} className="text-[11px] tracking-[0.3em] uppercase text-black bg-white px-6 py-3 font-bold text-center hover:bg-zinc-200 transition-all">CONTACTO</Link>
-          </div>
-        </div>
-      </nav>
+      <Navbar activePage="main" />
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center px-6 md:px-8 pt-20 overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:80px_80px]" />
-
-        {/* Imagem fundo — só mobile */}
         <div className="absolute inset-0 md:hidden">
-          <Image
-            src="/Fotos_loja/loja1.png"
-            alt="Elegance Studio"
-            fill
-            className="object-cover object-center"
-            priority
-          />
+          <Image src="/Fotos_loja/loja1.png" alt="Elegance Studio" fill className="object-cover object-center" priority />
           <div className="absolute inset-0 bg-black/70" />
         </div>
-
         <div className="absolute right-0 top-0 bottom-0 w-[45%] hidden md:block">
-          <Image
-            src="/Fotos_loja/loja1.png"
-            alt="Elegance Studio"
-            fill
-            className="object-cover object-center"
-            priority
-          />
+          <Image src="/Fotos_loja/loja1.png" alt="Elegance Studio" fill className="object-cover object-center" priority />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
         </div>
-
         <div className="relative z-10 max-w-7xl mx-auto w-full">
           <div>
             <div className="flex items-center gap-4 text-zinc-600 text-[11px] tracking-[0.5em] uppercase mb-8 md:mb-10">
@@ -111,7 +53,7 @@ export default function PageMain() {
         </div>
       </section>
 
-      {/* Menu / Preçário */}
+      {/* Preçário */}
       <section id="servicos" className="border-t border-white/5 bg-zinc-950/50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/5 border-x border-white/5">
           <div className="p-10 md:p-12 lg:p-20 flex flex-col justify-center bg-black min-h-[240px] md:min-h-[400px]">
@@ -140,7 +82,6 @@ export default function PageMain() {
           <h2 className="font-serif text-[clamp(2rem,5vw,56px)] uppercase tracking-tighter">O Nosso Trabalho</h2>
           <div className="w-16 h-px bg-zinc-700 mx-auto mt-6" />
         </div>
-
         <div style={{ overflow: 'hidden', marginBottom: '4px' }}>
           <div className="carousel-ltr">
             {[...ROW1, ...ROW1].map((img, i) => (
@@ -150,7 +91,6 @@ export default function PageMain() {
             ))}
           </div>
         </div>
-
         <div style={{ overflow: 'hidden' }}>
           <div className="carousel-rtl">
             {[...ROW2, ...ROW2].map((img, i) => (
@@ -164,47 +104,18 @@ export default function PageMain() {
 
       {/* Footer */}
       <footer className="py-14 md:py-20 px-6 md:px-8 border-t border-white/5 text-center bg-zinc-950/30">
-        <p className="text-[10px] tracking-[0.6em] md:tracking-[0.8em] text-zinc-700 uppercase">ELEGANCE STUDIO © 2026 · PINHAL NOVO · PORTUGAL</p>
+        <p className="text-[10px] tracking-[0.6em] md:tracking-[0.8em] text-zinc-700 uppercase mb-4">ELEGANCE STUDIO © 2026 · PINHAL NOVO · PORTUGAL</p>
+        <Link href="/politica-privacidade" className="text-[9px] tracking-[0.4em] text-zinc-800 uppercase hover:text-zinc-600 transition-colors">Política de Privacidade</Link>
       </footer>
 
       <style jsx global>{`
-        @keyframes scrollLeft {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        @keyframes scrollRight {
-          from { transform: translateX(-50%); }
-          to   { transform: translateX(0); }
-        }
-        .carousel-ltr {
-          display: flex;
-          width: max-content;
-          animation: scrollLeft 70s linear infinite;
-        }
-        .carousel-rtl {
-          display: flex;
-          width: max-content;
-          animation: scrollRight 70s linear infinite;
-        }
-        .carousel-card {
-          position: relative;
-          flex-shrink: 0;
-          width: 200px;
-          height: 260px;
-          margin-right: 4px;
-          overflow: hidden;
-          filter: grayscale(1);
-          transition: filter 0.6s ease;
-        }
-        @media (min-width: 768px) {
-          .carousel-card {
-            width: 300px;
-            height: 380px;
-          }
-        }
-        .carousel-card:hover {
-          filter: grayscale(0);
-        }
+        @keyframes scrollLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+        @keyframes scrollRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+        .carousel-ltr { display: flex; width: max-content; animation: scrollLeft 70s linear infinite; }
+        .carousel-rtl { display: flex; width: max-content; animation: scrollRight 70s linear infinite; }
+        .carousel-card { position: relative; flex-shrink: 0; width: 200px; height: 260px; margin-right: 4px; overflow: hidden; filter: grayscale(1); transition: filter 0.6s ease; }
+        @media (min-width: 768px) { .carousel-card { width: 300px; height: 380px; } }
+        .carousel-card:hover { filter: grayscale(0); }
       `}</style>
     </div>
   )
