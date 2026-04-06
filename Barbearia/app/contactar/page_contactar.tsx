@@ -105,7 +105,7 @@ export default function PageContactar() {
   }
 
   return (
-    <div className="bg-black text-white font-sans selection:bg-white selection:text-black min-h-screen overflow-x-hidden">
+    <div className="bg-black text-whitDe font-sans selection:bg-white selection:text-black min-h-screen overflow-x-hidden">
 
       <Navbar activePage="contactar" />
 
@@ -306,18 +306,6 @@ export default function PageContactar() {
                 </div>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="opacity-40 group-hover:translate-x-1 transition-transform"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </button>
-
-              <button onClick={handleInstagram} disabled={!barbeiro}
-                className={`flex items-center justify-between px-8 py-6 border transition-all duration-300 group
-                  ${barbeiro ? 'border-white/20 hover:bg-white hover:text-black cursor-pointer' : 'border-white/5 text-zinc-700 cursor-not-allowed'}`}
-              >
-                <div className="flex items-center gap-4">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
-                  <span className="text-[11px] tracking-[0.3em] uppercase font-semibold">Abrir Instagram</span>
-                </div>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="opacity-40 group-hover:translate-x-1 transition-transform"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-              </button>
-            </div>
 
             {!barbeiro && <p className="text-[11px] text-zinc-400 tracking-wider">← Seleciona um barbeiro para continuar</p>}
 
