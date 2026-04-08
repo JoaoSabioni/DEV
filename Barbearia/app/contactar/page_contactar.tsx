@@ -181,7 +181,7 @@ export default function PageContactar() {
 
             {/* 02 Serviços */}
             <div>
-              <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">02 · Serviço (opcional)</p>
+              <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">02 · Serviço</p>
               <div className="flex flex-col gap-2">
                 {SERVICOS.map((s, i) => {
                   const isSelected = selectedServicos.includes(s)
@@ -206,7 +206,7 @@ export default function PageContactar() {
 
             {/* 04 Data */}
             <div>
-              <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">04 · Data pretendida (opcional)</p>
+              <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">04 · Data pretendida <p>
               <div className="grid grid-cols-3 gap-3">
                 <select value={dia} onChange={(e) => setDia(e.target.value)} className="bg-black border border-white/20 px-4 py-4 text-[12px] text-white appearance-none cursor-pointer">
                   <option value="">Dia</option>
@@ -233,7 +233,7 @@ export default function PageContactar() {
 
             {/* 05 Horário */}
             <div>
-              <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">05 · Horário pretendido (opcional)</p>
+              <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">05 · Horário pretendido</p>
               <button onClick={() => setHorarioOpen(!horarioOpen)} className="w-full flex items-center justify-between px-6 py-5 border border-white/20 hover:border-white/40 transition-all group">
                 <div className="flex items-center gap-4">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-zinc-400"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
@@ -260,7 +260,7 @@ export default function PageContactar() {
 
             {/* 06 Mensagem */}
             <div>
-              <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">06 · Mensagem adicional (opcional)</p>
+              <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">06 · Mensagem adicional</p>
               <textarea placeholder="Alguma informação..." value={mensagem} onChange={(e) => setMensagem(e.target.value)} rows={3} className="w-full bg-transparent border border-white/20 px-6 py-4 text-[13px] text-white resize-none" />
             </div>
           </div>
