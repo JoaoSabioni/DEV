@@ -206,7 +206,7 @@ export default function PageContactar() {
 
             {/* 04 Data */}
             <div>
-              <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">04 · Data pretendida <p>
+            <p className="text-[10px] tracking-[0.8em] text-zinc-300 uppercase mb-6">04 · Data pretendida</p>
               <div className="grid grid-cols-3 gap-3">
                 <select value={dia} onChange={(e) => setDia(e.target.value)} className="bg-black border border-white/20 px-4 py-4 text-[12px] text-white appearance-none cursor-pointer">
                   <option value="">Dia</option>
