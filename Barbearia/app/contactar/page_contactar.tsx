@@ -139,25 +139,12 @@ export default function PageContactar() {
                   <button
                     key={i}
                     onClick={() => setSelectedBarbeiro(i)}
-                    // ✏️ ALTERAÇÃO: adicionado `items-center` para alinhar verticalmente
-                    // com a foto maior, e `py-4` em vez de `py-5` para equilíbrio visual
+                    
                     className={`flex items-center gap-5 px-6 py-4 border transition-all duration-300 text-left ${
                       selectedBarbeiro === i ? 'border-white bg-white/5' : 'border-white/10 hover:border-white/30'
                     }`}
                   >
-                    {/*
-                      ✏️ ALTERAÇÃO 1 — Tamanho da foto:
-                        ANTES:  w-12 h-12  (48×48px) → foto muito pequena, mal se via
-                        DEPOIS: w-20 h-20  (80×80px) → foto bem visível
-
-                      ✏️ ALTERAÇÃO 2 — Posicionamento da imagem:
-                        ANTES:  object-top    → cortava o rosto dependendo da foto
-                        DEPOIS: object-center → centra a imagem horizontalmente e verticalmente
-
-                      ✏️ ALTERAÇÃO 3 — Forma do container:
-                        ANTES:  sem border-radius
-                        DEPOIS: rounded-sm → canto suavemente arredondado
-                    */}
+                  
                     <div className="relative w-20 h-20 shrink-0 overflow-hidden rounded-sm">
                       <Image
                         src={b.foto}
