@@ -10,19 +10,19 @@ const LOJA = ['/Fotos_loja/loja3.png', '/Fotos_loja/loja4.png']
 const COLABORADORES = [
   {
     nome: 'Edi', cargo: 'Fundador', principal: '/Fotos_edi/edi2.png',
-    instagram: '@edi.elegance', instagramUrl: 'https://instagram.com/edi.elegance',
+    instagram: '@edisimoess', instagramUrl: 'https://instagram.com/edisimoess',
     telefone: '+351 933 320 269', whatsapp: 'https://wa.me/351933320269',
     fotos: ['/Fotos_edi/edi2.png','/Fotos_edi/edi3.png','/Fotos_edi/edi4.png','/Fotos_edi/edi5.png','/Fotos_edi/edi6.png','/Fotos_edi/edi7.png','/Fotos_edi/edi8.png'],
   },
   {
     nome: 'Tomas', cargo: 'Colaborador', principal: '/Fotos_Tomas/tomas2.png',
-    instagram: '@tomas.elegance', instagramUrl: 'https://instagram.com/tomas.elegance',
+    instagram: '@_tomas21_', instagramUrl: 'https://instagram.com/_tomas21_',
     telefone: '+351 914 302 079', whatsapp: 'https://wa.me/351914302079',
     fotos: ['/Fotos_Tomas/tomas2.png','/Fotos_Tomas/tomas3.png','/Fotos_Tomas/tomas4.png','/Fotos_Tomas/tomas5.png','/Fotos_Tomas/tomas6.png','/Fotos_Tomas/tomas7.png','/Fotos_Tomas/tomas8.png','/Fotos_Tomas/tomas9.png'],
   },
   {
     nome: 'Abreu', cargo: 'Colaborador', principal: '/Fotos_Abreu/abreuPrincipal.jpg',
-    instagram: '@abreu.elegance', instagramUrl: 'https://instagram.com/abreu.elegance',
+    instagram: '@abreeubarber', instagramUrl: 'https://instagram.com/abreeubarber',
     telefone: '+351 913 388 301', whatsapp: 'https://wa.me/351913388301',
     fotos: ['/Fotos_Abreu/abreu1.png','/Fotos_Abreu/abreu2.png','/Fotos_Abreu/abreu3.png','/Fotos_Abreu/abreu4.png','/Fotos_Abreu/abreu5.png','/Fotos_Abreu/abreu6.png','/Fotos_Abreu/abreu7.png','/Fotos_Abreu/abreu8.png'],
   },
