@@ -48,7 +48,7 @@ export default function PageMain() {
             <h1 className="font-serif text-[clamp(3.5rem,12vw,140px)] leading-[0.85] font-medium uppercase mb-8 md:mb-10 tracking-tighter">
               ELEGANCE<br /><span className="text-zinc-700">STUDIO</span>
             </h1>
-            <Link href="/contactar" className="inline-block border border-white/20 px-10 md:px-14 py-5 md:py-6 text-[11px] tracking-[0.5em] uppercase hover:bg-white hover:text-black font-bold transition-all duration-500">MARCAR AGORA</Link>
+            <Link href="/marcar" className="inline-block border border-white/20 px-10 md:px-14 py-5 md:py-6 text-[11px] tracking-[0.5em] uppercase hover:bg-white hover:text-black font-bold transition-all duration-500">MARCAR AGORA</Link>
           </div>
         </div>
       </section>

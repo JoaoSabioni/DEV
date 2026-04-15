@@ -51,7 +51,7 @@ export default function ServicosPage() {
 
       <section className="py-24 md:py-32 px-6 md:px-8 text-center border-t border-white/5">
         <p className="text-[10px] tracking-[0.8em] text-zinc-400 uppercase mb-6">Pronto para marcar?</p>
-        <Link href="/contactar" className="inline-block border border-white/20 px-12 md:px-20 py-5 md:py-6 text-[11px] tracking-[0.5em] uppercase hover:bg-white hover:text-black font-bold transition-all duration-500">CONTACTAR</Link>
+        <Link href="/marcar" className="inline-block border border-white/20 px-12 md:px-20 py-5 md:py-6 text-[11px] tracking-[0.5em] uppercase hover:bg-white hover:text-black font-bold transition-all duration-500">MARCAR AGORA</Link>
       </section>
 
       <footer className="py-14 px-6 md:px-8 border-t border-white/5 text-center bg-zinc-950/30">
